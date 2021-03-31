@@ -10,25 +10,28 @@ written in pressure-velocity formulation using mixed and hybrid PGRT FEM.
 
 ``ocp_sample.py``
 An example of an optimal control problem for the wave equation using the PGRT FEM.
-(Example 1)
+Output written in ``iterhist/ocp_sample.txt``. (Example 1)
 
 ``mfem_eoc.py``
-Computes the experimental orders of convergence in the mixed method. (Example 2)
+Computes the experimental orders of convergence in the mixed method. Output written 
+in ``iterhist/mfem_eoc.txt``. (Example 2)
 
 ``mfem_eoc_quasiunimesh.py``
 Computes the experimental orders of convergence in the mixed method with an initial
-quasi-uniform mesh and successively refined by bisection.
+quasi-uniform mesh and successively refined by bisection. Output written 
+in ``iterhist/mfem_eoc_quasiunimesh.txt``.
 
 ``hfem_eoc.py``
-Computes the experimental orders of convergence in the hybrid method. (Example 3)
+Computes the experimental orders of convergence in the hybrid method. 
+Output written in ``iterhist/hfem_eoc.txt``.(Example 3)
 
 ``hfem_condno.py``
 Prints the condition numbers of the system matrix in the hybrid formulation with
-decreasing penalty parameters.
+decreasing penalty parameters. Output written in ``iterhist/hfem_condno.txt``.
 
 ``hfem_eoc_penalty.py``
 Computes the experimental orders of convergence in the hybrid method with decreasing
-penalty parameters.
+penalty parameters. Output written in ``iterhist/hfem_eoc_penalty.txt``.
 
 ``strcolor.py``
 Module for output string coloring and highlighting.

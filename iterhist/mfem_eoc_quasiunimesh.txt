@@ -1,0 +1,294 @@
+> python mfem_eoc_quasiunimesh.py 
+******************************************************************************************
+
+Start of Run: 2021-03-31 20:14:51
+
+PYTHON VERSION: 3.7.6 (default, Jan  8 2020, 13:42:34) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] 
+PLATFORM: Darwin-18.6.0-x86_64-i386-64bit 
+PROCESSOR: i386
+VERSION: Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; 
+root:xnu-4903.261.4~2/RELEASE_X86_64 
+MAC VERSION: ('10.14.5', ('', '', ''), 'x86_64') 
+MAX FREQUENCY: 2300 MHz
+MEMORY INFO: Total = 8.0 GB, Available = 5.19 GB, Used = 2.47 GB, Percentage = 35.10%
+
+
+> MIXED FINITE ELEMENT: SPATIAL DISCRETIZATION ERRORS (QUASIUNIMESH) 
+
+==========================================================================================
+			Mixed FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   42
+	Number of Elements:                63
+	Number of Edges:                   104
+	Spatial Meshsize:                  0.2927494511
+	Number of Time Nodes:              1000
+	Temporal Meshsize:                 0.0010000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (104, 104)
+	Size of Stiffness Matrix:          (104, 63)
+	Size of System Matrix:             (104, 104)
+	System Matrix Density:             4.4563609467e-02
+	System Matrix Condition Number:    8.6113786693e+00
+	               Max Eigenvalue:     1.2062453259e+00
+	               Min Eigenvalue:     1.4007575004e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+00
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e+00
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 2.1861208569e+02
+	Steplength = 1.0000000000e+00		Optimality Res = 0.0000000000e+00
+Iteration: 2
+	Cost Value = 2.1861682924e+02		Relative Error = 2.1698029283e-05
+	Steplength = 9.6466223882e-01		Optimality Res = 4.2595543023e-04
+Iteration: 3
+	Cost Value = 2.1861649980e+02		Relative Error = 1.5069714319e-06
+	Steplength = 8.4800433845e-01		Optimality Res = 2.7315227595e-04
+Iteration: 4
+	Cost Value = 2.1861651558e+02		Relative Error = 7.2217814144e-08
+	Steplength = 8.2733431413e-01		Optimality Res = 1.1188291510e-05
+Optimal solution found.
+
+Elapsed time is 11.02442789 seconds.
+
+==========================================================================================
+			Mixed FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   146
+	Number of Elements:                252
+	Number of Edges:                   397
+	Spatial Meshsize:                  0.1463747256
+	Number of Time Nodes:              1000
+	Temporal Meshsize:                 0.0010000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (397, 397)
+	Size of Stiffness Matrix:          (397, 252)
+	Size of System Matrix:             (397, 397)
+	System Matrix Density:             1.2112252473e-02
+	System Matrix Condition Number:    9.9004093755e+00
+	               Max Eigenvalue:     1.3868459592e+00
+	               Min Eigenvalue:     1.4007965798e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+00
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e+00
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 2.1970074928e+02
+	Steplength = 1.0000000000e+00		Optimality Res = 0.0000000000e+00
+Iteration: 2
+	Cost Value = 2.1970484780e+02		Relative Error = 1.8654687409e-05
+	Steplength = 9.7511063950e-01		Optimality Res = 2.0878140262e-04
+Iteration: 3
+	Cost Value = 2.1970464101e+02		Relative Error = 9.4123695245e-07
+	Steplength = 8.5674915601e-01		Optimality Res = 1.8963611219e-04
+Optimal solution found.
+
+Elapsed time is 10.41477585 seconds.
+
+==========================================================================================
+			Mixed FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   543
+	Number of Elements:                1008
+	Number of Edges:                   1550
+	Spatial Meshsize:                  0.0731873628
+	Number of Time Nodes:              1000
+	Temporal Meshsize:                 0.0010000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (1550, 1550)
+	Size of Stiffness Matrix:          (1550, 1008)
+	Size of System Matrix:             (1550, 1550)
+	System Matrix Density:             3.1625390219e-03
+	System Matrix Condition Number:    1.0492422751e+01
+	               Max Eigenvalue:     1.4706624050e+00
+	               Min Eigenvalue:     1.4016423469e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+00
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e+00
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 2.2086580566e+02
+	Steplength = 1.0000000000e+00		Optimality Res = 0.0000000000e+00
+Iteration: 2
+	Cost Value = 2.2086990869e+02		Relative Error = 1.8576677351e-05
+	Steplength = 9.7373818145e-01		Optimality Res = 2.4909582236e-04
+Iteration: 3
+	Cost Value = 2.2086972049e+02		Relative Error = 8.5209465530e-07
+	Steplength = 8.4372848916e-01		Optimality Res = 2.5300965035e-04
+Optimal solution found.
+
+Elapsed time is 14.75863791 seconds.
+
+==========================================================================================
+			Mixed FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   2093
+	Number of Elements:                4032
+	Number of Edges:                   6124
+	Spatial Meshsize:                  0.0365936814
+	Number of Time Nodes:              1000
+	Temporal Meshsize:                 0.0010000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (6124, 6124)
+	Size of Stiffness Matrix:          (6124, 4032)
+	Size of System Matrix:             (6124, 6124)
+	System Matrix Density:             8.0835389326e-04
+	System Matrix Condition Number:    1.0699239968e+01
+	               Max Eigenvalue:     1.5042558498e+00
+	               Min Eigenvalue:     1.4059464544e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+00
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e+00
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 2.2108170097e+02
+	Steplength = 1.0000000000e+00		Optimality Res = 0.0000000000e+00
+Iteration: 2
+	Cost Value = 2.2108582217e+02		Relative Error = 1.8640714145e-05
+	Steplength = 9.7312824894e-01		Optimality Res = 2.6545346119e-04
+Iteration: 3
+	Cost Value = 2.2108563612e+02		Relative Error = 8.4151594302e-07
+	Steplength = 8.4066107713e-01		Optimality Res = 2.7239727427e-04
+Optimal solution found.
+
+Elapsed time is 34.71373296 seconds.
+
+==========================================================================================
+			Mixed FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   8217
+	Number of Elements:                16128
+	Number of Edges:                   24344
+	Spatial Meshsize:                  0.0182968407
+	Number of Time Nodes:              1000
+	Temporal Meshsize:                 0.0010000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (24344, 24344)
+	Size of Stiffness Matrix:          (24344, 16128)
+	Size of System Matrix:             (24344, 24344)
+	System Matrix Density:             2.0436348368e-04
+	System Matrix Condition Number:    1.0660045422e+01
+	               Max Eigenvalue:     1.5164234516e+00
+	               Min Eigenvalue:     1.4225300096e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+00
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e+00
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 2.2113571403e+02
+	Steplength = 1.0000000000e+00		Optimality Res = 0.0000000000e+00
+Iteration: 2
+	Cost Value = 2.2113984072e+02		Relative Error = 1.8661001255e-05
+	Steplength = 9.7295943635e-01		Optimality Res = 2.6995306255e-04
+Iteration: 3
+	Cost Value = 2.2113965509e+02		Relative Error = 8.3944520351e-07
+	Steplength = 8.3992894573e-01		Optimality Res = 2.7738271961e-04
+Optimal solution found.
+
+Elapsed time is 127.89261603 seconds.
+
+------------------------------------------------------------------------------------------
+			
+MFEM: ERRORS
+
+Control		Velocity	Pressure	Adj Velocity	Adj Pressure
+9.317130e-02	2.804498e-01	1.228176e-01	2.102199e-01	9.316684e-02
+3.859874e-02	7.349088e-02	4.378259e-02	5.760527e-02	3.858500e-02
+1.812723e-02	1.868653e-02	1.889265e-02	1.465807e-02	1.810583e-02
+8.911583e-03	4.713582e-03	9.027513e-03	3.338648e-03	8.903249e-03
+4.445082e-03	1.194876e-03	4.460114e-03	7.600448e-04	4.450369e-03
+
+------------------------------------------------------------------------------------------
+			
+MFEM: ORDER OF CONVERGENCE
+
+Control		Velocity	Pressure	Adj Velocity	Adj Pressure
+1.271332e+00	1.932105e+00	1.488088e+00	1.867627e+00	1.271776e+00
+1.090396e+00	1.975566e+00	1.212533e+00	1.974506e+00	1.091586e+00
+1.024405e+00	1.987103e+00	1.065424e+00	2.134359e+00	1.024050e+00
+1.003472e+00	1.979963e+00	1.017248e+00	2.135108e+00	1.000407e+00
+
+------------------------------------------------------------------------------------------
+
+End of Run: 2021-03-31 20:19:01
+
+******************************************************************************************
+
+> 

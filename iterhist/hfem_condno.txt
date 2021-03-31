@@ -1,0 +1,50 @@
+> python hfem_condno.py 
+******************************************************************************************
+
+Start of Run: 2021-03-31 19:56:28
+
+PYTHON VERSION: 3.7.6 (default, Jan  8 2020, 13:42:34) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] 
+PLATFORM: Darwin-18.6.0-x86_64-i386-64bit 
+PROCESSOR: i386
+VERSION: Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; 
+root:xnu-4903.261.4~2/RELEASE_X86_64 
+MAC VERSION: ('10.14.5', ('', '', ''), 'x86_64') 
+MAX FREQUENCY: 2300 MHz
+MEMORY INFO: Total = 8.0 GB, Available = 4.25 GB, Used = 3.57 GB, Percentage = 46.90%
+
+Penalty	Eig Max		Eig Min		Cond No
+1e-06	6.000698e+03	1.000000e+00	6.000698e+03
+1e-07	5.999798e+04	1.000000e+00	5.999798e+04
+1e-08	5.999708e+05	1.000000e+00	5.999708e+05
+1e-09	5.999699e+06	1.000000e+00	5.999699e+06
+1e-10	5.999698e+07	1.000000e+00	5.999698e+07
+1e-11	5.999698e+08	9.999999e-01	5.999699e+08
+
+Spatial Meshsize: 	2.209709e-02
+Temporal Stepsize:	1.000000e-03
+
+End of Run: 2021-03-31 19:56:58
+
+******************************************************************************************
+
+> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

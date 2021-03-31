@@ -1,0 +1,2248 @@
+> python ocp_sample.py 
+******************************************************************************************
+
+Start of Run: 2021-03-31 19:20:22
+
+PYTHON VERSION: 3.7.6 (default, Jan  8 2020, 13:42:34) 
+[Clang 4.0.1 (tags/RELEASE_401/final)] 
+PLATFORM: Darwin-18.6.0-x86_64-i386-64bit 
+PROCESSOR: i386
+VERSION: Darwin Kernel Version 18.6.0: Thu Apr 25 23:16:27 PDT 2019; 
+root:xnu-4903.261.4~2/RELEASE_X86_64 
+MAC VERSION: ('10.14.5', ('', '', ''), 'x86_64') 
+MAX FREQUENCY: 2300 MHz
+MEMORY INFO: Total = 8.0 GB, Available = 3.72 GB, Used = 4.28 GB, Percentage = 53.50%
+
+==========================================================================================
+			Mixed FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   441
+	Number of Elements:                800
+	Number of Edges:                   1240
+	Spatial Meshsize:                  0.0707106781
+	Number of Time Nodes:              100
+	Temporal Meshsize:                 0.0100000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (1240, 1240)
+	Size of Stiffness Matrix:          (1240, 800)
+	Size of System Matrix:             (1240, 1240)
+	System Matrix Density:             3.9281997919e-03
+	System Matrix Condition Number:    4.9485869691e+00
+	               Max Eigenvalue:     9.9908278034e-01
+	               Min Eigenvalue:     2.0189253752e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+01
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e-05
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 6.6246045090e+00
+	Steplength = 1.0000000000e+00		Optimality Res = 1.7919217749e+00
+Iteration: 2
+	Cost Value = 5.8102983395e+00		Relative Error = 1.4014877066e-01
+	Steplength = 8.8656757520e-01		Optimality Res = 4.8190444724e-01
+Iteration: 3
+	Cost Value = 4.1208038632e+00		Relative Error = 4.0999148040e-01
+	Steplength = 2.8260611301e+00		Optimality Res = 3.8709678567e-01
+Iteration: 4
+	Cost Value = 2.1332803993e+00		Relative Error = 9.3167474117e-01
+	Steplength = 8.5948068110e+00		Optimality Res = 3.0140657228e-01
+Iteration: 5
+	Cost Value = 3.3296691818e+01		Relative Error = 9.3593116064e-01
+	Steplength = 1.2486702638e+01		Optimality Res = 3.0815866966e-01
+Iteration: 6
+	Cost Value = 1.2803794241e+00		Relative Error = 2.5005331851e+01
+	Steplength = 8.1899257525e-01		Optimality Res = 3.7631309932e+00
+Iteration: 7
+	Cost Value = 1.0318829837e+00		Relative Error = 2.4081843027e-01
+	Steplength = 8.0771409259e-01		Optimality Res = 3.7456961239e-01
+Iteration: 8
+	Cost Value = 9.8867412232e-01		Relative Error = 4.3703845788e-02
+	Steplength = 6.2848211196e-01		Optimality Res = 1.5078908828e-01
+Iteration: 9
+	Cost Value = 9.4501664949e-01		Relative Error = 4.6197570016e-02
+	Steplength = 1.2677234430e+00		Optimality Res = 1.0680131455e-01
+Iteration: 10
+	Cost Value = 6.7979610638e-01		Relative Error = 3.9014719359e-01
+	Steplength = 9.3052473871e+00		Optimality Res = 1.0387713490e-01
+Iteration: 11
+	Cost Value = 3.0883973478e+00		Relative Error = 7.7988709682e-01
+	Steplength = 4.6952564639e+01		Optimality Res = 8.6336692260e-02
+Iteration: 12
+	Cost Value = 5.3299833205e-01		Relative Error = 4.7943846388e+00
+	Steplength = 8.7077313535e-01		Optimality Res = 1.2338955473e+00
+Iteration: 13
+	Cost Value = 1.4990145491e-01		Relative Error = 2.5556581646e+00
+	Steplength = 6.7185201569e-01		Optimality Res = 4.6310796015e-01
+Iteration: 14
+	Cost Value = 1.3718694210e-01		Relative Error = 9.2680196957e-02
+	Steplength = 6.3263009825e-01		Optimality Res = 7.9919936297e-02
+Iteration: 15
+	Cost Value = 1.2926692361e-01		Relative Error = 6.1268716464e-02
+	Steplength = 1.3039542340e+00		Optimality Res = 4.8207974447e-02
+Iteration: 16
+	Cost Value = 1.2465988512e-01		Relative Error = 3.6956864569e-02
+	Steplength = 1.1991520292e+00		Optimality Res = 3.0840410617e-02
+Iteration: 17
+	Cost Value = 1.1761394482e-01		Relative Error = 5.9907354555e-02
+	Steplength = 2.8743615268e+00		Optimality Res = 2.4310627119e-02
+Iteration: 18
+	Cost Value = 1.1408626065e-01		Relative Error = 3.0921200770e-02
+	Steplength = 1.3614278394e+00		Optimality Res = 2.4457052691e-02
+Iteration: 19
+	Cost Value = 1.0749392147e-01		Relative Error = 6.1327553188e-02
+	Steplength = 3.7593812270e+00		Optimality Res = 2.0861953930e-02
+Iteration: 20
+	Cost Value = 1.0491788589e-01		Relative Error = 2.4552873474e-02
+	Steplength = 1.1823888609e+00		Optimality Res = 2.5783285131e-02
+Iteration: 21
+	Cost Value = 1.0272285785e-01		Relative Error = 2.1368447943e-02
+	Steplength = 1.6622267906e+00		Optimality Res = 2.1832573274e-02
+Iteration: 22
+	Cost Value = 1.0100129611e-01		Relative Error = 1.7044946991e-02
+	Steplength = 6.8634251003e-01		Optimality Res = 2.5931039174e-02
+Iteration: 23
+	Cost Value = 9.9491421283e-02		Relative Error = 1.5175929821e-02
+	Steplength = 1.0687766903e+00		Optimality Res = 1.6549145949e-02
+Iteration: 24
+	Cost Value = 9.7953056532e-02		Relative Error = 1.5705122490e-02
+	Steplength = 1.1595133831e+00		Optimality Res = 1.5974985333e-02
+Iteration: 25
+	Cost Value = 7.9313423203e-02		Relative Error = 2.3501234187e-01
+	Steplength = 2.5646461561e+01		Optimality Res = 1.5528458960e-02
+Iteration: 26
+	Cost Value = 8.8999705952e-02		Relative Error = 1.0883499721e-01
+	Steplength = 1.7632619641e+00		Optimality Res = 5.2289442006e-02
+Iteration: 27
+	Cost Value = 7.3664772378e-02		Relative Error = 2.0817187211e-01
+	Steplength = 6.6719863149e-01		Optimality Res = 9.2824165219e-02
+Iteration: 28
+	Cost Value = 7.3333964217e-02		Relative Error = 4.5109815678e-03
+	Steplength = 6.2330152627e-01		Optimality Res = 1.1910197513e-02
+Iteration: 29
+	Cost Value = 7.2763417478e-02		Relative Error = 7.8411206968e-03
+	Steplength = 1.6815526243e+00		Optimality Res = 9.1873462387e-03
+Iteration: 30
+	Cost Value = 7.2329690424e-02		Relative Error = 5.9965285536e-03
+	Steplength = 1.3544767169e+00		Optimality Res = 8.6999327777e-03
+Iteration: 31
+	Cost Value = 6.7426358111e-02		Relative Error = 7.2721298478e-02
+	Steplength = 2.0547975990e+01		Optimality Res = 8.4007124411e-03
+Iteration: 32
+	Cost Value = 6.7186574458e-02		Relative Error = 3.5689221379e-03
+	Steplength = 2.6239946416e+00		Optimality Res = 1.4563501657e-02
+Iteration: 33
+	Cost Value = 6.6486048811e-02		Relative Error = 1.0536430719e-02
+	Steplength = 1.8386691816e+00		Optimality Res = 1.6700800512e-02
+Iteration: 34
+	Cost Value = 6.6018839535e-02		Relative Error = 7.0769083291e-03
+	Steplength = 1.1574086957e+00		Optimality Res = 1.2771442362e-02
+Iteration: 35
+	Cost Value = 6.5742787846e-02		Relative Error = 4.1989653656e-03
+	Steplength = 1.6296619261e+00		Optimality Res = 8.7290762948e-03
+Iteration: 36
+	Cost Value = 6.5533244830e-02		Relative Error = 3.1975071070e-03
+	Steplength = 8.2741793013e-01		Optimality Res = 8.9285311862e-03
+Iteration: 37
+	Cost Value = 6.5341148937e-02		Relative Error = 2.9398915697e-03
+	Steplength = 1.2307534174e+00		Optimality Res = 6.2867824792e-03
+Iteration: 38
+	Cost Value = 6.5221764056e-02		Relative Error = 1.8304454398e-03
+	Steplength = 7.4646822932e-01		Optimality Res = 6.0200680849e-03
+Iteration: 39
+	Cost Value = 6.4505967473e-02		Relative Error = 1.1096594808e-02
+	Steplength = 5.1965008149e+00		Optimality Res = 5.6141332337e-03
+Iteration: 40
+	Cost Value = 6.4323968734e-02		Relative Error = 2.8294077994e-03
+	Steplength = 1.3912013107e+00		Optimality Res = 6.1910848811e-03
+Iteration: 41
+	Cost Value = 6.4203199013e-02		Relative Error = 1.8810545710e-03
+	Steplength = 2.5600847772e+00		Optimality Res = 6.3363092543e-03
+Iteration: 42
+	Cost Value = 6.3901492477e-02		Relative Error = 4.7214317582e-03
+	Steplength = 6.3887477193e-01		Optimality Res = 1.2207650881e-02
+Iteration: 43
+	Cost Value = 6.3810420064e-02		Relative Error = 1.4272341793e-03
+	Steplength = 7.5665771745e-01		Optimality Res = 5.0464692146e-03
+Iteration: 44
+	Cost Value = 6.3634456947e-02		Relative Error = 2.7652175607e-03
+	Steplength = 1.4987780773e+00		Optimality Res = 4.9767410640e-03
+Iteration: 45
+	Cost Value = 5.8856502202e-02		Relative Error = 8.1179726380e-02
+	Steplength = 6.9379078119e+01		Optimality Res = 4.8872028672e-03
+Iteration: 46
+	Cost Value = 7.6250288652e-02		Relative Error = 2.2811436858e-01
+	Steplength = 6.2336550984e+00		Optimality Res = 1.3585573643e-02
+Iteration: 47
+	Cost Value = 6.2904728758e-02		Relative Error = 2.1215511389e-01
+	Steplength = 9.3391565400e-01		Optimality Res = 9.5712876970e-02
+Iteration: 48
+	Cost Value = 5.8674996943e-02		Relative Error = 7.2087465453e-02
+	Steplength = 6.4363341456e-01		Optimality Res = 4.8298515687e-02
+Iteration: 49
+	Cost Value = 5.8387780764e-02		Relative Error = 4.9191144966e-03
+	Steplength = 6.9755515807e-01		Optimality Res = 1.1682854834e-02
+Iteration: 50
+	Cost Value = 5.8237682489e-02		Relative Error = 2.5773394151e-03
+	Steplength = 1.1525294346e+00		Optimality Res = 7.3357462284e-03
+Iteration: 51
+	Cost Value = 5.8176688745e-02		Relative Error = 1.0484224217e-03
+	Steplength = 1.6997548199e+00		Optimality Res = 4.0701606731e-03
+Iteration: 52
+	Cost Value = 5.8140712667e-02		Relative Error = 6.1877600325e-04
+	Steplength = 1.2062061483e+00		Optimality Res = 2.8761805530e-03
+Iteration: 53
+	Cost Value = 5.8095216323e-02		Relative Error = 7.8313408073e-04
+	Steplength = 2.4145602403e+00		Optimality Res = 2.1503377352e-03
+Iteration: 54
+	Cost Value = 5.8069908710e-02		Relative Error = 4.3581285684e-04
+	Steplength = 1.1284140423e+00		Optimality Res = 2.2392225672e-03
+Iteration: 55
+	Cost Value = 5.8025837251e-02		Relative Error = 7.5951441010e-04
+	Steplength = 2.8967689242e+00		Optimality Res = 1.9640450961e-03
+Iteration: 56
+	Cost Value = 5.8001769389e-02		Relative Error = 4.1495047308e-04
+	Steplength = 7.5041675499e-01		Optimality Res = 2.9142865734e-03
+Iteration: 57
+	Cost Value = 5.7982121182e-02		Relative Error = 3.3886664021e-04
+	Steplength = 1.0724865503e+00		Optimality Res = 1.8572920629e-03
+Iteration: 58
+	Cost Value = 5.7968031040e-02		Relative Error = 2.4306747009e-04
+	Steplength = 7.6761958296e-01		Optimality Res = 1.7799215535e-03
+Iteration: 59
+	Cost Value = 5.7733851672e-02		Relative Error = 4.0561881926e-03
+	Steplength = 1.4461460103e+01		Optimality Res = 1.7335345194e-03
+Iteration: 60
+	Cost Value = 5.7710655342e-02		Relative Error = 4.0194188994e-04
+	Steplength = 1.4855215137e+00		Optimality Res = 2.6827563079e-03
+Iteration: 61
+	Cost Value = 5.7693857382e-02		Relative Error = 2.9115683202e-04
+	Steplength = 1.3006994552e+00		Optimality Res = 2.9348686881e-03
+Iteration: 62
+	Cost Value = 5.7671461524e-02		Relative Error = 3.8833518176e-04
+	Steplength = 6.3701042462e-01		Optimality Res = 3.0429097116e-03
+Iteration: 63
+	Cost Value = 5.7658613435e-02		Relative Error = 2.2283034475e-04
+	Steplength = 8.7704429389e-01		Optimality Res = 1.5853130556e-03
+Iteration: 64
+	Cost Value = 5.7638929128e-02		Relative Error = 3.4151062769e-04
+	Steplength = 1.3637362388e+00		Optimality Res = 1.5652225237e-03
+Iteration: 65
+	Cost Value = 5.6722348916e-02		Relative Error = 1.6159066568e-02
+	Steplength = 9.2537202810e+01		Optimality Res = 1.5489722625e-03
+Iteration: 66
+	Cost Value = 5.7370317961e-02		Relative Error = 1.1294499789e-02
+	Steplength = 3.2409248320e+00		Optimality Res = 6.3412473254e-03
+Iteration: 67
+	Cost Value = 5.6854248547e-02		Relative Error = 9.0770597877e-03
+	Steplength = 9.8359063586e-01		Optimality Res = 1.9803038340e-02
+Iteration: 68
+	Cost Value = 5.6615393253e-02		Relative Error = 4.2189108109e-03
+	Steplength = 6.4350051548e-01		Optimality Res = 1.1394753254e-02
+Iteration: 69
+	Cost Value = 5.6600936189e-02		Relative Error = 2.5542092408e-04
+	Steplength = 6.8288609775e-01		Optimality Res = 2.5442183245e-03
+Iteration: 70
+	Cost Value = 5.6590210806e-02		Relative Error = 1.8952718491e-04
+	Steplength = 1.1501886847e+00		Optimality Res = 1.7166145543e-03
+Iteration: 71
+	Cost Value = 5.6579925823e-02		Relative Error = 1.8177795023e-04
+	Steplength = 2.0806685154e+00		Optimality Res = 1.1596087558e-03
+Iteration: 72
+	Cost Value = 5.6573481959e-02		Relative Error = 1.1390254540e-04
+	Steplength = 1.2072941901e+00		Optimality Res = 1.0694637687e-03
+Iteration: 73
+	Cost Value = 5.6556080152e-02		Relative Error = 3.0769117692e-04
+	Steplength = 4.2420512315e+00		Optimality Res = 9.2974052855e-04
+Iteration: 74
+	Cost Value = 5.6549546247e-02		Relative Error = 1.1554302508e-04
+	Steplength = 1.1480975660e+00		Optimality Res = 1.1658570239e-03
+Iteration: 75
+	Cost Value = 5.6540704653e-02		Relative Error = 1.5637572712e-04
+	Steplength = 2.5163786726e+00		Optimality Res = 9.8321000050e-04
+Iteration: 76
+	Cost Value = 5.6535021128e-02		Relative Error = 1.0053104385e-04
+	Steplength = 7.6258323215e-01		Optimality Res = 1.3633712656e-03
+Iteration: 77
+	Cost Value = 5.6530124139e-02		Relative Error = 8.6626193703e-05
+	Steplength = 1.1527903823e+00		Optimality Res = 9.0638606090e-04
+Iteration: 78
+	Cost Value = 5.6526757095e-02		Relative Error = 5.9565488077e-05
+	Steplength = 7.5509867218e-01		Optimality Res = 8.7557356684e-04
+Iteration: 79
+	Cost Value = 5.6480479492e-02		Relative Error = 8.1935570563e-04
+	Steplength = 1.1698893657e+01		Optimality Res = 8.4829374660e-04
+Iteration: 80
+	Cost Value = 5.6474487286e-02		Relative Error = 1.0610465671e-04
+	Steplength = 1.2188762617e+00		Optimality Res = 1.2035149097e-03
+Iteration: 81
+	Cost Value = 5.6470029531e-02		Relative Error = 7.8940185819e-05
+	Steplength = 1.5030714775e+00		Optimality Res = 1.0993299454e-03
+Iteration: 82
+	Cost Value = 5.6465418696e-02		Relative Error = 8.1657681253e-05
+	Steplength = 6.4495988247e-01		Optimality Res = 1.2820656543e-03
+Iteration: 83
+	Cost Value = 5.6461312695e-02		Relative Error = 7.2722383089e-05
+	Steplength = 1.0811769697e+00		Optimality Res = 8.0846447594e-04
+Iteration: 84
+	Cost Value = 5.6456619404e-02		Relative Error = 8.3130925984e-05
+	Steplength = 1.2371880860e+00		Optimality Res = 8.0153970734e-04
+Iteration: 85
+	Cost Value = 5.6131954662e-02		Relative Error = 5.7839557537e-03
+	Steplength = 1.3570720476e+02		Optimality Res = 7.9618040586e-04
+Iteration: 86
+	Cost Value = 5.6243797261e-02		Relative Error = 1.9885321543e-03
+	Steplength = 1.7455167235e+00		Optimality Res = 6.1696174891e-03
+Iteration: 87
+	Cost Value = 5.6057586438e-02		Relative Error = 3.3217773845e-03
+	Steplength = 7.0476129915e-01		Optimality Res = 1.0398634712e-02
+Iteration: 88
+	Cost Value = 5.6051335871e-02		Relative Error = 1.1151504954e-04
+	Steplength = 6.2534837352e-01		Optimality Res = 1.7086602785e-03
+Iteration: 89
+	Cost Value = 5.6049295565e-02		Relative Error = 3.6401991627e-05
+	Steplength = 8.8229334894e-01		Optimality Res = 7.6931809328e-04
+Iteration: 90
+	Cost Value = 5.6047345777e-02		Relative Error = 3.4788221420e-05
+	Steplength = 1.2197302174e+00		Optimality Res = 5.8521787961e-04
+Iteration: 91
+	Cost Value = 5.6041785816e-02		Relative Error = 9.9210988539e-05
+	Steplength = 4.4125987586e+00		Optimality Res = 5.0678268725e-04
+Iteration: 92
+	Cost Value = 5.6039766549e-02		Relative Error = 3.6032761257e-05
+	Steplength = 1.2207034519e+00		Optimality Res = 6.1825527784e-04
+Iteration: 93
+	Cost Value = 5.6035430696e-02		Relative Error = 7.7376981155e-05
+	Steplength = 3.5271461403e+00		Optimality Res = 5.1261832972e-04
+Iteration: 94
+	Cost Value = 5.6033508309e-02		Relative Error = 3.4307819330e-05
+	Steplength = 1.1982699663e+00		Optimality Res = 5.8855125263e-04
+Iteration: 95
+	Cost Value = 5.6029221472e-02		Relative Error = 7.6510735109e-05
+	Steplength = 3.7823533764e+00		Optimality Res = 5.0379804475e-04
+Iteration: 96
+	Cost Value = 5.6027341792e-02		Relative Error = 3.3549320734e-05
+	Steplength = 1.0046187475e+00		Optimality Res = 6.6883499495e-04
+Iteration: 97
+	Cost Value = 5.6025437031e-02		Relative Error = 3.3998147375e-05
+	Steplength = 1.7983186535e+00		Optimality Res = 5.3869389844e-04
+Iteration: 98
+	Cost Value = 5.6024056450e-02		Relative Error = 2.4642645520e-05
+	Steplength = 7.1484878402e-01		Optimality Res = 6.2276482764e-04
+Iteration: 99
+	Cost Value = 5.6022147147e-02		Relative Error = 3.4081222289e-05
+	Steplength = 1.5575721305e+00		Optimality Res = 4.6972635263e-04
+Iteration: 100
+	Cost Value = 5.6021052839e-02		Relative Error = 1.9533873978e-05
+	Steplength = 8.2766014765e-01		Optimality Res = 4.6914150758e-04
+Iteration: 101
+	Cost Value = 5.6001968848e-02		Relative Error = 3.4077357055e-04
+	Steplength = 1.6896513809e+01		Optimality Res = 4.5932794363e-04
+Iteration: 102
+	Cost Value = 5.5999506780e-02		Relative Error = 4.3965889095e-05
+	Steplength = 8.9991406012e-01		Optimality Res = 9.2997055171e-04
+Iteration: 103
+	Cost Value = 5.5998433017e-02		Relative Error = 1.9174871417e-05
+	Steplength = 8.9665257640e-01		Optimality Res = 5.7902331147e-04
+Iteration: 104
+	Cost Value = 5.5997573766e-02		Relative Error = 1.5344436859e-05
+	Steplength = 6.5090398632e-01		Optimality Res = 4.7225371739e-04
+Iteration: 105
+	Cost Value = 5.5991044777e-02		Relative Error = 1.1660774500e-04
+	Steplength = 5.8448837248e+00		Optimality Res = 4.4197301906e-04
+Iteration: 106
+	Cost Value = 5.5989376858e-02		Relative Error = 2.9789917808e-05
+	Steplength = 1.3894992542e+00		Optimality Res = 4.7181454590e-04
+Iteration: 107
+	Cost Value = 5.5982779996e-02		Relative Error = 1.1783734347e-04
+	Steplength = 8.1961752820e+00		Optimality Res = 4.4746778657e-04
+Iteration: 108
+	Cost Value = 5.5979754237e-02		Relative Error = 5.4050939736e-05
+	Steplength = 8.1405497002e-01		Optimality Res = 1.0831141106e-03
+Iteration: 109
+	Cost Value = 5.5978673466e-02		Relative Error = 1.9306833292e-05
+	Steplength = 8.8923206737e-01		Optimality Res = 5.6899195109e-04
+Iteration: 110
+	Cost Value = 5.5977764994e-02		Relative Error = 1.6229160993e-05
+	Steplength = 7.4058269539e-01		Optimality Res = 4.6289735906e-04
+Iteration: 111
+	Cost Value = 5.5971689530e-02		Relative Error = 1.0854530077e-04
+	Steplength = 6.2005483533e+00		Optimality Res = 4.3262737778e-04
+Iteration: 112
+	Cost Value = 5.5970097113e-02		Relative Error = 2.8451220092e-05
+	Steplength = 1.1599271121e+00		Optimality Res = 5.6217641621e-04
+Iteration: 113
+	Cost Value = 5.5968208130e-02		Relative Error = 3.3751001187e-05
+	Steplength = 2.5341873756e+00		Optimality Res = 4.7991196901e-04
+Iteration: 114
+	Cost Value = 5.5966679568e-02		Relative Error = 2.7311994773e-05
+	Steplength = 7.4218276919e-01		Optimality Res = 6.9349912371e-04
+Iteration: 115
+	Cost Value = 5.5965599882e-02		Relative Error = 1.9291953863e-05
+	Steplength = 1.0915935686e+00		Optimality Res = 4.3902535823e-04
+Iteration: 116
+	Cost Value = 5.5964777411e-02		Relative Error = 1.4696224957e-05
+	Steplength = 7.6455474832e-01		Optimality Res = 4.2339514646e-04
+Iteration: 117
+	Cost Value = 5.5949310196e-02		Relative Error = 2.7645050155e-04
+	Steplength = 1.6610223800e+01		Optimality Res = 4.1365459706e-04
+Iteration: 118
+	Cost Value = 5.5947485654e-02		Relative Error = 3.2611688812e-05
+	Steplength = 1.1572515712e+00		Optimality Res = 7.0471552262e-04
+Iteration: 119
+	Cost Value = 5.5946523984e-02		Relative Error = 1.7189094013e-05
+	Steplength = 1.2965681266e+00		Optimality Res = 5.8536865719e-04
+Iteration: 120
+	Cost Value = 5.5945420616e-02		Relative Error = 1.9722223692e-05
+	Steplength = 6.5731191347e-01		Optimality Res = 5.8480168105e-04
+Iteration: 121
+	Cost Value = 5.5944251109e-02		Relative Error = 2.0904868102e-05
+	Steplength = 1.2691810599e+00		Optimality Res = 4.0108627648e-04
+Iteration: 122
+	Cost Value = 5.5943236249e-02		Relative Error = 1.8140884422e-05
+	Steplength = 1.0803045403e+00		Optimality Res = 3.9681260649e-04
+Iteration: 123
+	Cost Value = 5.5885734968e-02		Relative Error = 1.0289080214e-03
+	Steplength = 8.5611109004e+01		Optimality Res = 3.9437603316e-04
+Iteration: 124
+	Cost Value = 5.5875603716e-02		Relative Error = 1.8131798883e-04
+	Steplength = 1.0546435110e+00		Optimality Res = 2.6740905647e-03
+Iteration: 125
+	Cost Value = 5.5870208359e-02		Relative Error = 9.6569485074e-05
+	Steplength = 7.0790109229e-01		Optimality Res = 1.8156397754e-03
+Iteration: 126
+	Cost Value = 5.5869434215e-02		Relative Error = 1.3856308521e-05
+	Steplength = 6.3498875731e-01		Optimality Res = 5.0767016641e-04
+Iteration: 127
+	Cost Value = 5.5868191967e-02		Relative Error = 2.2235340107e-05
+	Steplength = 1.8423570957e+00		Optimality Res = 3.8489894233e-04
+Iteration: 128
+	Cost Value = 5.5867378845e-02		Relative Error = 1.4554499211e-05
+	Steplength = 1.2095998698e+00		Optimality Res = 3.5556963686e-04
+Iteration: 129
+	Cost Value = 5.5862229387e-02		Relative Error = 9.2181389908e-05
+	Steplength = 9.2222757945e+00		Optimality Res = 3.3403119619e-04
+Iteration: 130
+	Cost Value = 5.5861000250e-02		Relative Error = 2.2003485441e-05
+	Steplength = 1.2182240221e+00		Optimality Res = 5.2776247444e-04
+Iteration: 131
+	Cost Value = 5.5859910653e-02		Relative Error = 1.9505885431e-05
+	Steplength = 2.2153136899e+00		Optimality Res = 3.9763144645e-04
+Iteration: 132
+	Cost Value = 5.5859021961e-02		Relative Error = 1.5909563876e-05
+	Steplength = 8.8131295511e-01		Optimality Res = 4.7496350534e-04
+Iteration: 133
+	Cost Value = 5.5858256779e-02		Relative Error = 1.3698634594e-05
+	Steplength = 1.4620166075e+00		Optimality Res = 3.5708472417e-04
+Iteration: 134
+	Cost Value = 5.5857707727e-02		Relative Error = 9.8294679110e-06
+	Steplength = 7.0880513755e-01		Optimality Res = 3.6486705274e-04
+Iteration: 135
+	Cost Value = 5.5855931210e-02		Relative Error = 3.1805340412e-05
+	Steplength = 3.0957120958e+00		Optimality Res = 3.2061975773e-04
+Iteration: 136
+	Cost Value = 5.5855320407e-02		Relative Error = 1.0935453634e-05
+	Steplength = 9.2266288365e-01		Optimality Res = 3.3340418269e-04
+Iteration: 137
+	Cost Value = 5.5851455406e-02		Relative Error = 6.9201444162e-05
+	Steplength = 7.9462902479e+00		Optimality Res = 3.2007904804e-04
+Iteration: 138
+	Cost Value = 5.5850303242e-02		Relative Error = 2.0629500793e-05
+	Steplength = 7.0656797644e-01		Optimality Res = 6.3034855279e-04
+Iteration: 139
+	Cost Value = 5.5849809095e-02		Relative Error = 8.8477709703e-06
+	Steplength = 8.9380587799e-01		Optimality Res = 3.2945388899e-04
+Iteration: 140
+	Cost Value = 5.5849345657e-02		Relative Error = 8.2980170400e-06
+	Steplength = 7.8023612137e-01		Optimality Res = 3.1543626939e-04
+Iteration: 141
+	Cost Value = 5.5832380869e-02		Relative Error = 3.0385212447e-04
+	Steplength = 3.3953729449e+01		Optimality Res = 3.1134432905e-04
+Iteration: 142
+	Cost Value = 5.5830545444e-02		Relative Error = 3.2874927552e-05
+	Steplength = 1.3377360576e+00		Optimality Res = 8.0876970021e-04
+Iteration: 143
+	Cost Value = 5.5830121078e-02		Relative Error = 7.6010135258e-06
+	Steplength = 1.3033652403e+00		Optimality Res = 6.5213489708e-04
+Iteration: 144
+	Cost Value = 5.5829003107e-02		Relative Error = 2.0024915054e-05
+	Steplength = 6.7871195767e-01		Optimality Res = 6.3389404016e-04
+Iteration: 145
+	Cost Value = 5.5828564026e-02		Relative Error = 7.8648227416e-06
+	Steplength = 8.7312672574e-01		Optimality Res = 3.1311778875e-04
+Iteration: 146
+	Cost Value = 5.5828067412e-02		Relative Error = 8.8954097949e-06
+	Steplength = 9.5996102578e-01		Optimality Res = 2.9712946959e-04
+Iteration: 147
+	Cost Value = 5.5815870176e-02		Relative Error = 2.1852629931e-04
+	Steplength = 2.9010516980e+01		Optimality Res = 2.9199019231e-04
+Iteration: 148
+	Cost Value = 5.5813998202e-02		Relative Error = 3.3539509771e-05
+	Steplength = 1.1800972492e+00		Optimality Res = 8.3498916421e-04
+Iteration: 149
+	Cost Value = 5.5813489858e-02		Relative Error = 9.1079072849e-06
+	Steplength = 1.2006796855e+00		Optimality Res = 6.0245057873e-04
+Iteration: 150
+	Cost Value = 5.5812675691e-02		Relative Error = 1.4587492380e-05
+	Steplength = 6.9059931343e-01		Optimality Res = 5.1650004888e-04
+Iteration: 151
+	Cost Value = 5.5812223483e-02		Relative Error = 8.1023209115e-06
+	Steplength = 1.0123044248e+00		Optimality Res = 2.9702104328e-04
+Iteration: 152
+	Cost Value = 5.5811765059e-02		Relative Error = 8.2137429626e-06
+	Steplength = 9.7897048392e-01		Optimality Res = 2.8148135341e-04
+Iteration: 153
+	Cost Value = 5.5802518384e-02		Relative Error = 1.6570355555e-04
+	Steplength = 2.5203300055e+01		Optimality Res = 2.7642264950e-04
+Iteration: 154
+	Cost Value = 5.5800748319e-02		Relative Error = 3.1721168560e-05
+	Steplength = 9.9174057872e-01		Optimality Res = 8.3760497281e-04
+Iteration: 155
+	Cost Value = 5.5800241522e-02		Relative Error = 9.0823294412e-06
+	Steplength = 9.4972312951e-01		Optimality Res = 5.2383985215e-04
+Iteration: 156
+	Cost Value = 5.5799777946e-02		Relative Error = 8.3078532722e-06
+	Steplength = 6.8479957558e-01		Optimality Res = 3.5706445558e-04
+Iteration: 157
+	Cost Value = 5.5799029175e-02		Relative Error = 1.3419062360e-05
+	Steplength = 1.8756929618e+00		Optimality Res = 2.7806834400e-04
+Iteration: 158
+	Cost Value = 5.5798531557e-02		Relative Error = 8.9181295546e-06
+	Steplength = 1.1440839690e+00		Optimality Res = 2.7192713417e-04
+Iteration: 159
+	Cost Value = 5.5794164073e-02		Relative Error = 7.8278509985e-05
+	Steplength = 1.5437516771e+01		Optimality Res = 2.6562590746e-04
+Iteration: 160
+	Cost Value = 5.5792237528e-02		Relative Error = 3.4530690232e-05
+	Steplength = 7.6458871432e-01		Optimality Res = 8.9415836166e-04
+Iteration: 161
+	Cost Value = 5.5791894374e-02		Relative Error = 6.1506102020e-06
+	Steplength = 7.6659427297e-01		Optimality Res = 3.6619982794e-04
+Iteration: 162
+	Cost Value = 5.5791558713e-02		Relative Error = 6.0163481578e-06
+	Steplength = 7.5157279484e-01		Optimality Res = 2.8271011691e-04
+Iteration: 163
+	Cost Value = 5.5789190411e-02		Relative Error = 4.2450898644e-05
+	Steplength = 7.1155066255e+00		Optimality Res = 2.6421718418e-04
+Iteration: 164
+	Cost Value = 5.5788453458e-02		Relative Error = 1.3209786302e-05
+	Steplength = 1.2201730260e+00		Optimality Res = 3.9601197440e-04
+Iteration: 165
+	Cost Value = 5.5787793251e-02		Relative Error = 1.1834250466e-05
+	Steplength = 2.3978412050e+00		Optimality Res = 3.0549960067e-04
+Iteration: 166
+	Cost Value = 5.5787198184e-02		Relative Error = 1.0666739467e-05
+	Steplength = 8.8001863571e-01		Optimality Res = 3.8422853955e-04
+Iteration: 167
+	Cost Value = 5.5786762570e-02		Relative Error = 7.8085409385e-06
+	Steplength = 1.4023064718e+00		Optimality Res = 2.8369157729e-04
+Iteration: 168
+	Cost Value = 5.5786415138e-02		Relative Error = 6.2279110857e-06
+	Steplength = 7.1081081186e-01		Optimality Res = 2.8519112366e-04
+Iteration: 169
+	Cost Value = 5.5785282990e-02		Relative Error = 2.0294739602e-05
+	Steplength = 3.2426912993e+00		Optimality Res = 2.5175294415e-04
+Iteration: 170
+	Cost Value = 5.5784905057e-02		Relative Error = 6.7748156271e-06
+	Steplength = 9.0097061606e-01		Optimality Res = 2.6372762282e-04
+Iteration: 171
+	Cost Value = 5.5782735987e-02		Relative Error = 3.8884253731e-05
+	Steplength = 7.2439911437e+00		Optimality Res = 2.5162632223e-04
+Iteration: 172
+	Cost Value = 5.5782069208e-02		Relative Error = 1.1953291261e-05
+	Steplength = 7.0863846249e-01		Optimality Res = 4.5714696689e-04
+Iteration: 173
+	Cost Value = 5.5781745128e-02		Relative Error = 5.8097846169e-06
+	Steplength = 9.6821995928e-01		Optimality Res = 2.5794555196e-04
+Iteration: 174
+	Cost Value = 5.5781451595e-02		Relative Error = 5.2621935307e-06
+	Steplength = 7.8856928518e-01		Optimality Res = 2.4878530657e-04
+Iteration: 175
+	Cost Value = 5.5771429937e-02		Relative Error = 1.7969161796e-04
+	Steplength = 3.2283122739e+01		Optimality Res = 2.4551244700e-04
+Iteration: 176
+	Cost Value = 5.5770310624e-02		Relative Error = 2.0070054914e-05
+	Steplength = 1.2386948049e+00		Optimality Res = 6.2209977414e-04
+Iteration: 177
+	Cost Value = 5.5770019211e-02		Relative Error = 5.2252568346e-06
+	Steplength = 1.1715536162e+00		Optimality Res = 5.0344350415e-04
+Iteration: 178
+	Cost Value = 5.5769442517e-02		Relative Error = 1.0340685339e-05
+	Steplength = 6.6957599968e-01		Optimality Res = 4.2822916455e-04
+Iteration: 179
+	Cost Value = 5.5769128648e-02		Relative Error = 5.6279978823e-06
+	Steplength = 1.0019062460e+00		Optimality Res = 2.4422214126e-04
+Iteration: 180
+	Cost Value = 5.5768795212e-02		Relative Error = 5.9789096360e-06
+	Steplength = 1.0195513447e+00		Optimality Res = 2.3558916735e-04
+Iteration: 181
+	Cost Value = 5.5758341055e-02		Relative Error = 1.8749044743e-04
+	Steplength = 4.1162664206e+01		Optimality Res = 2.3275793592e-04
+Iteration: 182
+	Cost Value = 5.5756504842e-02		Relative Error = 3.2932723281e-05
+	Steplength = 1.0863949828e+00		Optimality Res = 8.9191631201e-04
+Iteration: 183
+	Cost Value = 5.5755997045e-02		Relative Error = 9.1074758737e-06
+	Steplength = 9.5893977310e-01		Optimality Res = 6.1356276134e-04
+Iteration: 184
+	Cost Value = 5.5755530811e-02		Relative Error = 8.3621155617e-06
+	Steplength = 6.7383880572e-01		Optimality Res = 3.7840164911e-04
+Iteration: 185
+	Cost Value = 5.5755188811e-02		Relative Error = 6.1339567660e-06
+	Steplength = 1.2023703624e+00		Optimality Res = 2.4041147322e-04
+Iteration: 186
+	Cost Value = 5.5754861250e-02		Relative Error = 5.8750163196e-06
+	Steplength = 1.1173546887e+00		Optimality Res = 2.2418288012e-04
+Iteration: 187
+	Cost Value = 5.5750237652e-02		Relative Error = 8.2934141909e-05
+	Steplength = 2.1694074542e+01		Optimality Res = 2.1936746307e-04
+Iteration: 188
+	Cost Value = 5.5748944678e-02		Relative Error = 2.3192809685e-05
+	Steplength = 9.2798213939e-01		Optimality Res = 7.0325514358e-04
+Iteration: 189
+	Cost Value = 5.5748644549e-02		Relative Error = 5.3835979029e-06
+	Steplength = 9.0948008960e-01		Optimality Res = 4.0340358616e-04
+Iteration: 190
+	Cost Value = 5.5748356615e-02		Relative Error = 5.1648963496e-06
+	Steplength = 7.0376824775e-01		Optimality Res = 2.7095686956e-04
+Iteration: 191
+	Cost Value = 5.5747766441e-02		Relative Error = 1.0586511226e-05
+	Steplength = 2.3976482252e+00		Optimality Res = 2.2263460949e-04
+Iteration: 192
+	Cost Value = 5.5747436743e-02		Relative Error = 5.9141290350e-06
+	Steplength = 1.1197006018e+00		Optimality Res = 2.2642039942e-04
+Iteration: 193
+	Cost Value = 5.5746039770e-02		Relative Error = 2.5059595815e-05
+	Steplength = 8.0257295093e+00		Optimality Res = 2.1571796752e-04
+Iteration: 194
+	Cost Value = 5.5745249175e-02		Relative Error = 1.4182274046e-05
+	Steplength = 7.5392974228e-01		Optimality Res = 5.2316163213e-04
+Iteration: 195
+	Cost Value = 5.5745043855e-02		Relative Error = 3.6832017664e-06
+	Steplength = 8.5023629714e-01		Optimality Res = 2.5155284037e-04
+Iteration: 196
+	Cost Value = 5.5744825724e-02		Relative Error = 3.9130288184e-06
+	Steplength = 7.7576345937e-01		Optimality Res = 2.1807232716e-04
+Iteration: 197
+	Cost Value = 5.5742302967e-02		Relative Error = 4.5257502030e-05
+	Steplength = 1.1577857825e+01		Optimality Res = 2.0973881106e-04
+Iteration: 198
+	Cost Value = 5.5741749579e-02		Relative Error = 9.9277018280e-06
+	Steplength = 1.1547783779e+00		Optimality Res = 3.6663860220e-04
+Iteration: 199
+	Cost Value = 5.5741495139e-02		Relative Error = 4.5646437204e-06
+	Steplength = 1.7623416193e+00		Optimality Res = 2.7568681549e-04
+Iteration: 200
+	Cost Value = 5.5741101092e-02		Relative Error = 7.0692450545e-06
+	Steplength = 7.5493548814e-01		Optimality Res = 3.2281357529e-04
+Iteration: 201
+	Cost Value = 5.5740839936e-02		Relative Error = 4.6851702141e-06
+	Steplength = 1.2147746857e+00		Optimality Res = 2.1522130562e-04
+Iteration: 202
+	Cost Value = 5.5740632685e-02		Relative Error = 3.7181292225e-06
+	Steplength = 7.6281318730e-01		Optimality Res = 2.0949294096e-04
+Iteration: 203
+	Cost Value = 5.5737941760e-02		Relative Error = 4.8278171854e-05
+	Steplength = 1.2342855977e+01		Optimality Res = 2.0295651930e-04
+Iteration: 204
+	Cost Value = 5.5737517503e-02		Relative Error = 7.6116894507e-06
+	Steplength = 9.7182974366e-01		Optimality Res = 3.1128724810e-04
+Iteration: 205
+	Cost Value = 5.5737291846e-02		Relative Error = 4.0485799610e-06
+	Steplength = 1.4003971628e+00		Optimality Res = 2.3940770432e-04
+Iteration: 206
+	Cost Value = 5.5737043136e-02		Relative Error = 4.4622088079e-06
+	Steplength = 6.7674199786e-01		Optimality Res = 2.4689601345e-04
+Iteration: 207
+	Cost Value = 5.5736587709e-02		Relative Error = 8.1710476164e-06
+	Steplength = 2.0742994075e+00		Optimality Res = 1.9985140501e-04
+Iteration: 208
+	Cost Value = 5.5736350352e-02		Relative Error = 4.2585782396e-06
+	Steplength = 9.7114771723e-01		Optimality Res = 2.0063550067e-04
+Iteration: 209
+	Cost Value = 5.5731351541e-02		Relative Error = 8.9694766428e-05
+	Steplength = 2.8789424307e+01		Optimality Res = 1.9826277006e-04
+Iteration: 210
+	Cost Value = 5.5729858288e-02		Relative Error = 2.6794483109e-05
+	Steplength = 7.5030092103e-01		Optimality Res = 7.8777572410e-04
+Iteration: 211
+	Cost Value = 5.5729703090e-02		Relative Error = 2.7848385850e-06
+	Steplength = 7.0673577262e-01		Optimality Res = 2.7078096032e-04
+Iteration: 212
+	Cost Value = 5.5729535524e-02		Relative Error = 3.0067827124e-06
+	Steplength = 7.0529596662e-01		Optimality Res = 2.0454941473e-04
+Iteration: 213
+	Cost Value = 5.5727740762e-02		Relative Error = 3.2205888019e-05
+	Steplength = 1.0010589217e+01		Optimality Res = 1.9512830541e-04
+Iteration: 214
+	Cost Value = 5.5727270206e-02		Relative Error = 8.4439200214e-06
+	Steplength = 1.2202604128e+00		Optimality Res = 3.4498547758e-04
+Iteration: 215
+	Cost Value = 5.5726881100e-02		Relative Error = 6.9823704882e-06
+	Steplength = 2.1698433858e+00		Optimality Res = 2.3969076664e-04
+Iteration: 216
+	Cost Value = 5.5726555896e-02		Relative Error = 5.8357014530e-06
+	Steplength = 1.0725693590e+00		Optimality Res = 2.4574061914e-04
+Iteration: 217
+	Cost Value = 5.5726230389e-02		Relative Error = 5.8411953718e-06
+	Steplength = 2.5492572555e+00		Optimality Res = 2.0979044828e-04
+Iteration: 218
+	Cost Value = 5.5725897082e-02		Relative Error = 5.9811713067e-06
+	Steplength = 7.2571643711e-01		Optimality Res = 2.9817669196e-04
+Iteration: 219
+	Cost Value = 5.5725683577e-02		Relative Error = 3.8313648279e-06
+	Steplength = 1.1802220849e+00		Optimality Res = 1.9424835126e-04
+Iteration: 220
+	Cost Value = 5.5725510086e-02		Relative Error = 3.1133172953e-06
+	Steplength = 7.8537931026e-01		Optimality Res = 1.8976410987e-04
+Iteration: 221
+	Cost Value = 5.5721903978e-02		Relative Error = 6.4716164325e-05
+	Steplength = 2.0131668927e+01		Optimality Res = 1.8605293169e-04
+Iteration: 222
+	Cost Value = 5.5721400839e-02		Relative Error = 9.0295397614e-06
+	Steplength = 9.9734746179e-01		Optimality Res = 3.6944380593e-04
+Iteration: 223
+	Cost Value = 5.5721256546e-02		Relative Error = 2.5895631467e-06
+	Steplength = 1.0781424630e+00		Optimality Res = 2.6137633341e-04
+Iteration: 224
+	Cost Value = 5.5721054539e-02		Relative Error = 3.6253238588e-06
+	Steplength = 6.6948403141e-01		Optimality Res = 2.2221460377e-04
+Iteration: 225
+	Cost Value = 5.5720639283e-02		Relative Error = 7.4524576682e-06
+	Steplength = 2.2951236583e+00		Optimality Res = 1.8322969400e-04
+Iteration: 226
+	Cost Value = 5.5720414842e-02		Relative Error = 4.0279881795e-06
+	Steplength = 1.1085265128e+00		Optimality Res = 1.8385887381e-04
+Iteration: 227
+	Cost Value = 5.5717329992e-02		Relative Error = 5.5366072399e-05
+	Steplength = 2.4872720711e+01		Optimality Res = 1.8129080654e-04
+Iteration: 228
+	Cost Value = 5.5715793130e-02		Relative Error = 2.7583951222e-05
+	Steplength = 7.4454196007e-01		Optimality Res = 8.0550333024e-04
+Iteration: 229
+	Cost Value = 5.5715645893e-02		Relative Error = 2.6426534506e-06
+	Steplength = 7.1684431305e-01		Optimality Res = 2.7320037990e-04
+Iteration: 230
+	Cost Value = 5.5715487513e-02		Relative Error = 2.8426578426e-06
+	Steplength = 7.5273336958e-01		Optimality Res = 1.9830237730e-04
+Iteration: 231
+	Cost Value = 5.5714557480e-02		Relative Error = 1.6692819058e-05
+	Steplength = 6.2301116666e+00		Optimality Res = 1.8258954410e-04
+Iteration: 232
+	Cost Value = 5.5714221042e-02		Relative Error = 6.0386341456e-06
+	Steplength = 1.1921042977e+00		Optimality Res = 2.6937248489e-04
+Iteration: 233
+	Cost Value = 5.5713869974e-02		Relative Error = 6.3012721085e-06
+	Steplength = 2.5304216432e+00		Optimality Res = 2.0361585269e-04
+Iteration: 234
+	Cost Value = 5.5713589123e-02		Relative Error = 5.0409799718e-06
+	Steplength = 9.9712066661e-01		Optimality Res = 2.3606402004e-04
+Iteration: 235
+	Cost Value = 5.5713362862e-02		Relative Error = 4.0611525888e-06
+	Steplength = 2.0553487089e+00		Optimality Res = 1.9472215703e-04
+Iteration: 236
+	Cost Value = 5.5713124031e-02		Relative Error = 4.2868078776e-06
+	Steplength = 7.1045476531e-01		Optimality Res = 2.4173031869e-04
+Iteration: 237
+	Cost Value = 5.5712894375e-02		Relative Error = 4.1221412765e-06
+	Steplength = 1.4739835346e+00		Optimality Res = 1.7536021388e-04
+Iteration: 238
+	Cost Value = 5.5712740526e-02		Relative Error = 2.7614550230e-06
+	Steplength = 8.1439135345e-01		Optimality Res = 1.7471694493e-04
+Iteration: 239
+	Cost Value = 5.5709707973e-02		Relative Error = 5.4434923138e-05
+	Steplength = 2.0343680452e+01		Optimality Res = 1.7145567389e-04
+Iteration: 240
+	Cost Value = 5.5709236302e-02		Relative Error = 8.4666453847e-06
+	Steplength = 8.6024838280e-01		Optimality Res = 3.7308160317e-04
+Iteration: 241
+	Cost Value = 5.5709123353e-02		Relative Error = 2.0274902010e-06
+	Steplength = 9.0367617446e-01		Optimality Res = 2.1651727380e-04
+Iteration: 242
+	Cost Value = 5.5708987211e-02		Relative Error = 2.4437993840e-06
+	Steplength = 6.7235169700e-01		Optimality Res = 1.7952343962e-04
+Iteration: 243
+	Cost Value = 5.5707980530e-02		Relative Error = 1.8070682413e-05
+	Steplength = 6.6683999692e+00		Optimality Res = 1.6852325517e-04
+Iteration: 244
+	Cost Value = 5.5707733625e-02		Relative Error = 4.4321521050e-06
+	Steplength = 1.2335902648e+00		Optimality Res = 1.9650782938e-04
+Iteration: 245
+	Cost Value = 5.5707295436e-02		Relative Error = 7.8659094617e-06
+	Steplength = 4.5802555907e+00		Optimality Res = 1.7716621411e-04
+Iteration: 246
+	Cost Value = 5.5706906509e-02		Relative Error = 6.9816732347e-06
+	Steplength = 7.8811986944e-01		Optimality Res = 3.3292915503e-04
+Iteration: 247
+	Cost Value = 5.5706774930e-02		Relative Error = 2.3619937339e-06
+	Steplength = 9.9651145675e-01		Optimality Res = 1.9236754249e-04
+Iteration: 248
+	Cost Value = 5.5706634452e-02		Relative Error = 2.5217386325e-06
+	Steplength = 7.5356139993e-01		Optimality Res = 1.7339072413e-04
+Iteration: 249
+	Cost Value = 5.5705353826e-02		Relative Error = 2.2989285713e-05
+	Steplength = 9.2053467707e+00		Optimality Res = 1.6565375146e-04
+Iteration: 250
+	Cost Value = 5.5705069731e-02		Relative Error = 5.0999753600e-06
+	Steplength = 1.0505765340e+00		Optimality Res = 2.4068914796e-04
+Iteration: 251
+	Cost Value = 5.5704912815e-02		Relative Error = 2.8169180141e-06
+	Steplength = 1.8475608927e+00		Optimality Res = 1.9460796531e-04
+Iteration: 252
+	Cost Value = 5.5704686314e-02		Relative Error = 4.0661080308e-06
+	Steplength = 7.0737746887e-01		Optimality Res = 2.3632450083e-04
+Iteration: 253
+	Cost Value = 5.5704498188e-02		Relative Error = 3.3772154251e-06
+	Steplength = 1.3702652467e+00		Optimality Res = 1.6572090383e-04
+Iteration: 254
+	Cost Value = 5.5704362402e-02		Relative Error = 2.4376120108e-06
+	Steplength = 8.1550387586e-01		Optimality Res = 1.6435103569e-04
+Iteration: 255
+	Cost Value = 5.5701234182e-02		Relative Error = 5.6160705694e-05
+	Steplength = 2.3823659121e+01		Optimality Res = 1.6166821467e-04
+Iteration: 256
+	Cost Value = 5.5700755785e-02		Relative Error = 8.5886967598e-06
+	Steplength = 8.9709216937e-01		Optimality Res = 3.7945362331e-04
+Iteration: 257
+	Cost Value = 5.5700659840e-02		Relative Error = 1.7224972369e-06
+	Steplength = 8.9201865455e-01		Optimality Res = 2.2446158155e-04
+Iteration: 258
+	Cost Value = 5.5700532081e-02		Relative Error = 2.2936814130e-06
+	Steplength = 6.6959607495e-01		Optimality Res = 1.7378503267e-04
+Iteration: 259
+	Cost Value = 5.5699873867e-02		Relative Error = 1.1817155624e-05
+	Steplength = 4.9373895271e+00		Optimality Res = 1.5924999945e-04
+Iteration: 260
+	Cost Value = 5.5699670641e-02		Relative Error = 3.6486051957e-06
+	Steplength = 1.2048876635e+00		Optimality Res = 1.7652252583e-04
+Iteration: 261
+	Cost Value = 5.5699119068e-02		Relative Error = 9.9027305769e-06
+	Steplength = 6.0942633230e+00		Optimality Res = 1.6301909066e-04
+Iteration: 262
+	Cost Value = 5.5698732801e-02		Relative Error = 6.9349184156e-06
+	Steplength = 8.0734462578e-01		Optimality Res = 3.3364929030e-04
+Iteration: 263
+	Cost Value = 5.5698621042e-02		Relative Error = 2.0065001728e-06
+	Steplength = 9.8296652519e-01		Optimality Res = 1.9015917046e-04
+Iteration: 264
+	Cost Value = 5.5698492448e-02		Relative Error = 2.3087546867e-06
+	Steplength = 7.4884310589e-01		Optimality Res = 1.6611858744e-04
+Iteration: 265
+	Cost Value = 5.5697606613e-02		Relative Error = 1.5904363452e-05
+	Steplength = 7.2459084722e+00		Optimality Res = 1.5659683209e-04
+Iteration: 266
+	Cost Value = 5.5697370384e-02		Relative Error = 4.2412997570e-06
+	Steplength = 1.0579712502e+00		Optimality Res = 2.1162099621e-04
+Iteration: 267
+	Cost Value = 5.5697209292e-02		Relative Error = 2.8922799310e-06
+	Steplength = 2.1781439683e+00		Optimality Res = 1.7706063485e-04
+Iteration: 268
+	Cost Value = 5.5696987376e-02		Relative Error = 3.9843375455e-06
+	Steplength = 7.1483475770e-01		Optimality Res = 2.3450118184e-04
+Iteration: 269
+	Cost Value = 5.5696837268e-02		Relative Error = 2.6950900508e-06
+	Steplength = 1.2579277971e+00		Optimality Res = 1.5749619800e-04
+Iteration: 270
+	Cost Value = 5.5696719397e-02		Relative Error = 2.1163067749e-06
+	Steplength = 7.9175168929e-01		Optimality Res = 1.5528597218e-04
+Iteration: 271
+	Cost Value = 5.5694012485e-02		Relative Error = 4.8603279452e-05
+	Steplength = 2.2976879414e+01		Optimality Res = 1.5258474927e-04
+Iteration: 272
+	Cost Value = 5.5693620192e-02		Relative Error = 7.0437687469e-06
+	Steplength = 9.6191494738e-01		Optimality Res = 3.2750523400e-04
+Iteration: 273
+	Cost Value = 5.5693539025e-02		Relative Error = 1.4573889036e-06
+	Steplength = 9.9480838131e-01		Optimality Res = 2.1770446730e-04
+Iteration: 274
+	Cost Value = 5.5693407728e-02		Relative Error = 2.3575036641e-06
+	Steplength = 6.6841843135e-01		Optimality Res = 1.7479482260e-04
+Iteration: 275
+	Cost Value = 5.5693054115e-02		Relative Error = 6.3493221861e-06
+	Steplength = 2.9454989741e+00		Optimality Res = 1.5051177393e-04
+Iteration: 276
+	Cost Value = 5.5692894704e-02		Relative Error = 2.8623122266e-06
+	Steplength = 1.1425939872e+00		Optimality Res = 1.5359075634e-04
+Iteration: 277
+	Cost Value = 5.5691652756e-02		Relative Error = 2.2300427370e-05
+	Steplength = 1.5630519704e+01		Optimality Res = 1.4981502442e-04
+Iteration: 278
+	Cost Value = 5.5690921533e-02		Relative Error = 1.3130034009e-05
+	Steplength = 7.5000331159e-01		Optimality Res = 5.1979592963e-04
+Iteration: 279
+	Cost Value = 5.5690830618e-02		Relative Error = 1.6324992732e-06
+	Steplength = 7.6793208055e-01		Optimality Res = 2.0530314481e-04
+Iteration: 280
+	Cost Value = 5.5690717908e-02		Relative Error = 2.0238444360e-06
+	Steplength = 7.7469303864e-01		Optimality Res = 1.6051677995e-04
+Iteration: 281
+	Cost Value = 5.5689951429e-02		Relative Error = 1.3763325998e-05
+	Steplength = 7.5554215774e+00		Optimality Res = 1.5016894902e-04
+Iteration: 282
+	Cost Value = 5.5689696120e-02		Relative Error = 4.5844973236e-06
+	Steplength = 1.1911228699e+00		Optimality Res = 2.3560735823e-04
+Iteration: 283
+	Cost Value = 5.5689533009e-02		Relative Error = 2.9289293424e-06
+	Steplength = 2.2557172929e+00		Optimality Res = 1.7924099067e-04
+Iteration: 284
+	Cost Value = 5.5689310623e-02		Relative Error = 3.9933400686e-06
+	Steplength = 8.7019818613e-01		Optimality Res = 2.2012631990e-04
+Iteration: 285
+	Cost Value = 5.5689192482e-02		Relative Error = 2.1214242456e-06
+	Steplength = 1.4146254208e+00		Optimality Res = 1.6122664791e-04
+Iteration: 286
+	Cost Value = 5.5689069693e-02		Relative Error = 2.2049172588e-06
+	Steplength = 7.0734221396e-01		Optimality Res = 1.6293365722e-04
+Iteration: 287
+	Cost Value = 5.5688698494e-02		Relative Error = 6.6655997512e-06
+	Steplength = 3.4491780521e+00		Optimality Res = 1.4406982360e-04
+Iteration: 288
+	Cost Value = 5.5688566361e-02		Relative Error = 2.3727095315e-06
+	Steplength = 9.0399836909e-01		Optimality Res = 1.5187723923e-04
+Iteration: 289
+	Cost Value = 5.5687926856e-02		Relative Error = 1.1483727126e-05
+	Steplength = 7.2450097229e+00		Optimality Res = 1.4450828043e-04
+Iteration: 290
+	Cost Value = 5.5687662117e-02		Relative Error = 4.7540109405e-06
+	Steplength = 7.0957447059e-01		Optimality Res = 2.6994158507e-04
+Iteration: 291
+	Cost Value = 5.5687565968e-02		Relative Error = 1.7265803628e-06
+	Steplength = 9.7025229907e-01		Optimality Res = 1.4965308446e-04
+Iteration: 292
+	Cost Value = 5.5687466621e-02		Relative Error = 1.7840010701e-06
+	Steplength = 8.0303138588e-01		Optimality Res = 1.4355402830e-04
+Iteration: 293
+	Cost Value = 5.5684511533e-02		Relative Error = 5.3068407120e-05
+	Steplength = 3.0409178701e+01		Optimality Res = 1.4145670876e-04
+Iteration: 294
+	Cost Value = 5.5684044701e-02		Relative Error = 8.3835760060e-06
+	Steplength = 1.1007463557e+00		Optimality Res = 3.7371032973e-04
+Iteration: 295
+	Cost Value = 5.5683987519e-02		Relative Error = 1.0269120552e-06
+	Steplength = 1.1388915888e+00		Optimality Res = 2.6302283125e-04
+Iteration: 296
+	Cost Value = 5.5683803315e-02		Relative Error = 3.3080378873e-06
+	Steplength = 6.8620227306e-01		Optimality Res = 2.1626065725e-04
+Iteration: 297
+	Cost Value = 5.5683677154e-02		Relative Error = 2.2656685498e-06
+	Steplength = 1.2781047795e+00		Optimality Res = 1.4359653311e-04
+Iteration: 298
+	Cost Value = 5.5683559295e-02		Relative Error = 2.1165807156e-06
+	Steplength = 1.0253141461e+00		Optimality Res = 1.3881511809e-04
+Iteration: 299
+	Cost Value = 5.5681350064e-02		Relative Error = 3.9676329393e-05
+	Steplength = 2.9139393730e+01		Optimality Res = 1.3688793112e-04
+Iteration: 300
+	Cost Value = 5.5680533467e-02		Relative Error = 1.4665746845e-05
+	Steplength = 8.0184874190e-01		Optimality Res = 5.5780810918e-04
+Iteration: 301
+	Cost Value = 5.5680450949e-02		Relative Error = 1.4819860631e-06
+	Steplength = 7.6628897861e-01		Optimality Res = 2.3315789285e-04
+Iteration: 302
+	Cost Value = 5.5680351133e-02		Relative Error = 1.7926637368e-06
+	Steplength = 7.2456356502e-01		Optimality Res = 1.5673446219e-04
+Iteration: 303
+	Cost Value = 5.5679949493e-02		Relative Error = 7.2133709684e-06
+	Steplength = 4.7202776075e+00		Optimality Res = 1.4069418436e-04
+Iteration: 304
+	Cost Value = 5.5679772303e-02		Relative Error = 3.1823068401e-06
+	Steplength = 1.2092851936e+00		Optimality Res = 1.8209086860e-04
+Iteration: 305
+	Cost Value = 5.5679578491e-02		Relative Error = 3.4808380117e-06
+	Steplength = 3.0663927803e+00		Optimality Res = 1.4964054052e-04
+Iteration: 306
+	Cost Value = 5.5679377298e-02		Relative Error = 3.6134339232e-06
+	Steplength = 9.1356474400e-01		Optimality Res = 2.0587057352e-04
+Iteration: 307
+	Cost Value = 5.5679289930e-02		Relative Error = 1.5691161405e-06
+	Steplength = 1.4444021339e+00		Optimality Res = 1.5290822592e-04
+Iteration: 308
+	Cost Value = 5.5679175744e-02		Relative Error = 2.0507951556e-06
+	Steplength = 7.0809033505e-01		Optimality Res = 1.5639266965e-04
+Iteration: 309
+	Cost Value = 5.5678948747e-02		Relative Error = 4.0768843320e-06
+	Steplength = 2.5900704047e+00		Optimality Res = 1.3198554313e-04
+Iteration: 310
+	Cost Value = 5.5678846540e-02		Relative Error = 1.8356546771e-06
+	Steplength = 8.5959867531e-01		Optimality Res = 1.3626374961e-04
+Iteration: 311
+	Cost Value = 5.5678069272e-02		Relative Error = 1.3960044025e-05
+	Steplength = 9.9996697369e+00		Optimality Res = 1.3121242635e-04
+Iteration: 312
+	Cost Value = 5.5677832133e-02		Relative Error = 4.2591247441e-06
+	Steplength = 7.3497021389e-01		Optimality Res = 2.5111905202e-04
+Iteration: 313
+	Cost Value = 5.5677758186e-02		Relative Error = 1.3281207228e-06
+	Steplength = 9.6985024761e-01		Optimality Res = 1.3971065119e-04
+Iteration: 314
+	Cost Value = 5.5677677168e-02		Relative Error = 1.4551200283e-06
+	Steplength = 7.6052932356e-01		Optimality Res = 1.3199552575e-04
+Iteration: 315
+	Cost Value = 5.5675963340e-02		Relative Error = 3.0782185812e-05
+	Steplength = 2.0883235810e+01		Optimality Res = 1.2927518202e-04
+Iteration: 316
+	Cost Value = 5.5675675905e-02		Relative Error = 5.1626740602e-06
+	Steplength = 1.1130231967e+00		Optimality Res = 2.6270912204e-04
+Iteration: 317
+	Cost Value = 5.5675637807e-02		Relative Error = 6.8428018846e-07
+	Steplength = 1.3650512994e+00		Optimality Res = 1.9536141444e-04
+Optimal solution found.
+
+Elapsed time is 99.69958091 seconds.
+
+> File created: result_mfem.pdf
+
+==========================================================================================
+			Hybrid FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   441
+	Number of Elements:                800
+	Number of Edges:                   1240
+	Spatial Meshsize:                  0.0707106781
+	Number of Time Nodes:              100
+	Temporal Meshsize:                 0.0100000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (2400, 2400)
+	Size of Stiffness Matrix:          (2400, 800)
+	Size of Lagrange Matrix:           (2400, 1160)
+	Size of System Matrix:             (2400, 2400)
+	System Matrix Density:             3.5194444444e-03
+	System Matrix Condition Number:    5.9952096611e+08
+	               Max Eigenvalue:     5.9952092270e+08
+	               Min Eigenvalue:     9.9999992759e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+01
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e-05
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Penalty Term                       1.0e-10
+	Pressure Averaged                  False
+	Velocity Averaged                  False
+	Lagrange Averaged                  False
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 3.3889823308e+00
+	Steplength = 1.0000000000e+00		Optimality Res = 1.7768547880e+00
+Iteration: 2
+	Cost Value = 3.0468682191e+00		Relative Error = 1.1228385578e-01
+	Steplength = 8.9635617225e-01		Optimality Res = 4.7182174250e-01
+Iteration: 3
+	Cost Value = 2.2319699907e+00		Relative Error = 3.6510268140e-01
+	Steplength = 3.1357994889e+00		Optimality Res = 3.8677850366e-01
+Iteration: 4
+	Cost Value = 1.2742949996e+00		Relative Error = 7.5153319405e-01
+	Steplength = 8.6236482980e+00		Optimality Res = 2.9375944072e-01
+Iteration: 5
+	Cost Value = 1.5087507999e+01		Relative Error = 9.1553972998e-01
+	Steplength = 1.2154752847e+01		Optimality Res = 3.4500499190e-01
+Iteration: 6
+	Cost Value = 7.4329495915e-01		Relative Error = 1.9298143844e+01
+	Steplength = 8.3328045432e-01		Optimality Res = 4.1749696878e+00
+Iteration: 7
+	Cost Value = 6.4277286195e-01		Relative Error = 1.5638820982e-01
+	Steplength = 8.2427652145e-01		Optimality Res = 3.9007539167e-01
+Iteration: 8
+	Cost Value = 6.1963383401e-01		Relative Error = 3.7343067270e-02
+	Steplength = 6.3313899306e-01		Optimality Res = 1.5785238141e-01
+Iteration: 9
+	Cost Value = 5.9258433292e-01		Relative Error = 4.5646669322e-02
+	Steplength = 1.1953904831e+00		Optimality Res = 1.0717534679e-01
+Iteration: 10
+	Cost Value = 2.3265715259e-01		Relative Error = 1.5470282186e+00
+	Steplength = 2.1193293378e+01		Optimality Res = 1.0444635785e-01
+Iteration: 11
+	Cost Value = 1.2807020379e+00		Relative Error = 8.1833623613e-01
+	Steplength = 4.8108335995e+01		Optimality Res = 6.5202014816e-02
+Iteration: 12
+	Cost Value = 8.4487807487e-02		Relative Error = 1.4158424345e+01
+	Steplength = 7.5663788453e-01		Optimality Res = 1.3732088255e+00
+Iteration: 13
+	Cost Value = 2.9551472132e-02		Relative Error = 1.8590050306e+00
+	Steplength = 6.5211706060e-01		Optimality Res = 2.8552988618e-01
+Iteration: 14
+	Cost Value = 2.5668563181e-02		Relative Error = 1.5127098950e-01
+	Steplength = 6.5743299920e-01		Optimality Res = 6.1730782069e-02
+Iteration: 15
+	Cost Value = 2.1687748835e-02		Relative Error = 1.8355129322e-01
+	Steplength = 1.6736211723e+00		Optimality Res = 4.1368221041e-02
+Iteration: 16
+	Cost Value = 1.9473906648e-02		Relative Error = 1.1368248944e-01
+	Steplength = 1.5261141084e+00		Optimality Res = 2.8930310929e-02
+Iteration: 17
+	Cost Value = 1.5513601162e-02		Relative Error = 2.5527957339e-01
+	Steplength = 5.2880790776e+00		Optimality Res = 2.3782510232e-02
+Iteration: 18
+	Cost Value = 1.5307168636e-02		Relative Error = 1.3486003241e-02
+	Steplength = 3.0230190048e+00		Optimality Res = 2.1392914033e-02
+Iteration: 19
+	Cost Value = 1.4945907948e-02		Relative Error = 2.4171210555e-02
+	Steplength = 1.5238974575e+00		Optimality Res = 4.1535107858e-02
+Iteration: 20
+	Cost Value = 1.3553707280e-02		Relative Error = 1.0271733327e-01
+	Steplength = 7.5191035460e-01		Optimality Res = 4.3350602636e-02
+Iteration: 21
+	Cost Value = 1.3299707542e-02		Relative Error = 1.9098144624e-02
+	Steplength = 7.1805977698e-01		Optimality Res = 1.4309023809e-02
+Iteration: 22
+	Cost Value = 1.3116699067e-02		Relative Error = 1.3952327044e-02
+	Steplength = 6.8569251681e-01		Optimality Res = 1.1467042980e-02
+Iteration: 23
+	Cost Value = 8.4581895089e-03		Relative Error = 5.5076911592e-01
+	Steplength = 2.3748809338e+01		Optimality Res = 1.1206495042e-02
+Iteration: 24
+	Cost Value = 1.2163000364e-02		Relative Error = 3.0459678895e-01
+	Steplength = 8.2390502151e+00		Optimality Res = 1.2833799392e-02
+Iteration: 25
+	Cost Value = 1.2941700658e-02		Relative Error = 6.0169858281e-02
+	Steplength = 1.8209633394e+00		Optimality Res = 7.2628045211e-02
+Iteration: 26
+	Cost Value = 7.3333982353e-03		Relative Error = 7.6476174388e-01
+	Steplength = 8.1368038906e-01		Optimality Res = 9.1448594893e-02
+Iteration: 27
+	Cost Value = 6.8893885523e-03		Relative Error = 6.4448343955e-02
+	Steplength = 7.0942074319e-01		Optimality Res = 2.5536225170e-02
+Iteration: 28
+	Cost Value = 6.8225543344e-03		Relative Error = 9.7960697060e-03
+	Steplength = 6.5800235447e-01		Optimality Res = 7.8604901431e-03
+Iteration: 29
+	Cost Value = 6.5862992400e-03		Relative Error = 3.5870689417e-02
+	Steplength = 2.7686067441e+00		Optimality Res = 6.7375848897e-03
+Iteration: 30
+	Cost Value = 6.4518408705e-03		Relative Error = 2.0840310876e-02
+	Steplength = 1.4339467462e+00		Optimality Res = 6.7234669261e-03
+Iteration: 31
+	Cost Value = 5.7758844359e-03		Relative Error = 1.1703081011e-01
+	Steplength = 1.0087583738e+01		Optimality Res = 6.3787530251e-03
+Iteration: 32
+	Cost Value = 5.6137121193e-03		Relative Error = 2.8888605820e-02
+	Steplength = 1.1251515061e+00		Optimality Res = 1.2070305634e-02
+Iteration: 33
+	Cost Value = 5.5347329508e-03		Relative Error = 1.4269734261e-02
+	Steplength = 9.6044029627e-01		Optimality Res = 8.6605607563e-03
+Iteration: 34
+	Cost Value = 5.4872375602e-03		Relative Error = 8.6556104243e-03
+	Steplength = 6.3692963601e-01		Optimality Res = 6.4971991252e-03
+Iteration: 35
+	Cost Value = 5.3461129466e-03		Relative Error = 2.6397611699e-02
+	Steplength = 2.2975161742e+00		Optimality Res = 5.4643038290e-03
+Iteration: 36
+	Cost Value = 4.2355133219e-03		Relative Error = 2.6221134022e-01
+	Steplength = 2.1140154519e+01		Optimality Res = 5.3322980670e-03
+Iteration: 37
+	Cost Value = 1.5492683998e-01		Relative Error = 9.7266120369e-01
+	Steplength = 9.0806604158e+01		Optimality Res = 5.4552677508e-03
+Iteration: 38
+	Cost Value = 4.3171838107e-03		Relative Error = 3.4886088426e+01
+	Steplength = 6.6150956431e-01		Optimality Res = 4.8581311983e-01
+Iteration: 39
+	Cost Value = 2.7266666216e-03		Relative Error = 5.8331927215e-01
+	Steplength = 6.4357955828e-01		Optimality Res = 4.3893496215e-02
+Iteration: 40
+	Cost Value = 2.3238081898e-03		Relative Error = 1.7336130990e-01
+	Steplength = 9.4039720996e-01		Optimality Res = 1.8862050526e-02
+Iteration: 41
+	Cost Value = 2.2663007944e-03		Relative Error = 2.5375005627e-02
+	Steplength = 1.3548722162e+00		Optimality Res = 6.5582879437e-03
+Iteration: 42
+	Cost Value = 2.2553512093e-03		Relative Error = 4.8549356918e-03
+	Steplength = 1.3225308779e+00		Optimality Res = 2.3638453271e-03
+Iteration: 43
+	Cost Value = 2.2420247766e-03		Relative Error = 5.9439275295e-03
+	Steplength = 2.3665769504e+00		Optimality Res = 1.7900904574e-03
+Iteration: 44
+	Cost Value = 2.2357867003e-03		Relative Error = 2.7901034882e-03
+	Steplength = 1.0521742232e+00		Optimality Res = 1.9235414098e-03
+Iteration: 45
+	Cost Value = 2.2228917736e-03		Relative Error = 5.8009691748e-03
+	Steplength = 2.8778107098e+00		Optimality Res = 1.7670451027e-03
+Iteration: 46
+	Cost Value = 2.2164226403e-03		Relative Error = 2.9187273222e-03
+	Steplength = 6.6051054224e-01		Optimality Res = 2.7094865231e-03
+Iteration: 47
+	Cost Value = 2.2110001086e-03		Relative Error = 2.4525243924e-03
+	Steplength = 1.0348057743e+00		Optimality Res = 1.6232885434e-03
+Iteration: 48
+	Cost Value = 2.2044551372e-03		Relative Error = 2.9689746362e-03
+	Steplength = 1.2691836648e+00		Optimality Res = 1.6100423400e-03
+Iteration: 49
+	Cost Value = 1.9263289781e-03		Relative Error = 1.4438144382e-01
+	Steplength = 1.1746388481e+02		Optimality Res = 1.5955865847e-03
+Iteration: 50
+	Cost Value = 2.3120321458e-03		Relative Error = 1.6682431012e-01
+	Steplength = 2.0089197923e+00		Optimality Res = 1.2812731671e-02
+Iteration: 51
+	Cost Value = 1.8170760309e-03		Relative Error = 2.7239152712e-01
+	Steplength = 6.3729004909e-01		Optimality Res = 2.7951874384e-02
+Iteration: 52
+	Cost Value = 1.8156061074e-03		Relative Error = 8.0960479689e-04
+	Steplength = 6.2989118851e-01		Optimality Res = 1.0997118963e-03
+Iteration: 53
+	Cost Value = 1.8019912557e-03		Relative Error = 7.5554482947e-03
+	Steplength = 6.5964930300e+00		Optimality Res = 1.0348240792e-03
+Iteration: 54
+	Cost Value = 1.7951822057e-03		Relative Error = 3.7929575873e-03
+	Steplength = 3.6245936678e+00		Optimality Res = 1.0035476805e-03
+Iteration: 55
+	Cost Value = 1.7883382952e-03		Relative Error = 3.8269663837e-03
+	Steplength = 1.2601214920e+01		Optimality Res = 1.0353267950e-03
+Iteration: 56
+	Cost Value = 1.7723362254e-03		Relative Error = 9.0288002808e-03
+	Steplength = 1.2825176444e+00		Optimality Res = 3.9902271257e-03
+Iteration: 57
+	Cost Value = 1.7678525736e-03		Relative Error = 2.5362136358e-03
+	Steplength = 1.2859143354e+00		Optimality Res = 1.5728323286e-03
+Iteration: 58
+	Cost Value = 1.7663744108e-03		Relative Error = 8.3683436353e-04
+	Steplength = 9.9200075443e-01		Optimality Res = 1.0418069498e-03
+Iteration: 59
+	Cost Value = 1.7613215293e-03		Relative Error = 2.8688012731e-03
+	Steplength = 3.1442039474e+00		Optimality Res = 8.7138588326e-04
+Iteration: 60
+	Cost Value = 1.7595384844e-03		Relative Error = 1.0133594263e-03
+	Steplength = 1.2997134259e+00		Optimality Res = 8.9217877006e-04
+Iteration: 61
+	Cost Value = 1.7468113055e-03		Relative Error = 7.2859494587e-03
+	Steplength = 9.7757048796e+00		Optimality Res = 8.5797449760e-04
+Iteration: 62
+	Cost Value = 1.7440701459e-03		Relative Error = 1.5717026159e-03
+	Steplength = 8.7434714638e-01		Optimality Res = 1.9794182876e-03
+Iteration: 63
+	Cost Value = 1.7426799955e-03		Relative Error = 7.9770834338e-04
+	Steplength = 9.3962659203e-01		Optimality Res = 9.0891057105e-04
+Iteration: 64
+	Cost Value = 1.7417873163e-03		Relative Error = 5.1250758596e-04
+	Steplength = 6.4671800842e-01		Optimality Res = 8.2594293581e-04
+Iteration: 65
+	Cost Value = 1.7263386988e-03		Relative Error = 8.9487755602e-03
+	Steplength = 1.1883990046e+01		Optimality Res = 7.9769677251e-04
+Iteration: 66
+	Cost Value = 1.7169197490e-03		Relative Error = 5.4859580584e-03
+	Steplength = 9.2030078734e+00		Optimality Res = 7.7420370768e-04
+Iteration: 67
+	Cost Value = 3.1417745295e-03		Relative Error = 4.5351910746e-01
+	Steplength = 2.2043494561e+01		Optimality Res = 1.6468027540e-03
+Iteration: 68
+	Cost Value = 1.7232358170e-03		Relative Error = 8.2318316424e-01
+	Steplength = 6.7820778876e-01		Optimality Res = 4.6947557224e-02
+Iteration: 69
+	Cost Value = 1.6987667264e-03		Relative Error = 1.4404032169e-02
+	Steplength = 6.5316414377e-01		Optimality Res = 5.4401553645e-03
+Iteration: 70
+	Cost Value = 1.6914126644e-03		Relative Error = 4.3478816179e-03
+	Steplength = 8.8903273952e-01		Optimality Res = 2.4382181701e-03
+Iteration: 71
+	Cost Value = 1.6879762753e-03		Relative Error = 2.0358041139e-03
+	Steplength = 1.7007343221e+00		Optimality Res = 1.3042218493e-03
+Iteration: 72
+	Cost Value = 1.6863123690e-03		Relative Error = 9.8671295908e-04
+	Steplength = 1.5588098094e+00		Optimality Res = 7.6974660114e-04
+Iteration: 73
+	Cost Value = 1.6824187027e-03		Relative Error = 2.3143266151e-03
+	Steplength = 4.8359794710e+00		Optimality Res = 6.9487371755e-04
+Iteration: 74
+	Cost Value = 1.6811122836e-03		Relative Error = 7.7711587205e-04
+	Steplength = 8.4097778511e-01		Optimality Res = 1.1432590009e-03
+Iteration: 75
+	Cost Value = 1.6800798206e-03		Relative Error = 6.1453211999e-04
+	Steplength = 1.0982892978e+00		Optimality Res = 7.3322168181e-04
+Iteration: 76
+	Cost Value = 1.6794398027e-03		Relative Error = 3.8109012229e-04
+	Steplength = 6.7653871086e-01		Optimality Res = 6.9646935930e-04
+Iteration: 77
+	Cost Value = 1.6728070085e-03		Relative Error = 3.9650684008e-03
+	Steplength = 7.5322049969e+00		Optimality Res = 6.5849568709e-04
+Iteration: 78
+	Cost Value = 1.6709925777e-03		Relative Error = 1.0858401171e-03
+	Steplength = 2.2392722303e+00		Optimality Res = 6.7546480426e-04
+Iteration: 79
+	Cost Value = 1.6885085208e-03		Relative Error = 1.0373618421e-02
+	Steplength = 9.3286780802e+00		Optimality Res = 7.8912768891e-04
+Iteration: 80
+	Cost Value = 1.6625730047e-03		Relative Error = 1.5599625432e-02
+	Steplength = 6.3536927937e-01		Optimality Res = 6.3666098777e-03
+Iteration: 81
+	Cost Value = 1.6620388349e-03		Relative Error = 3.2139425249e-04
+	Steplength = 6.3903134298e-01		Optimality Res = 6.4341857436e-04
+Iteration: 82
+	Cost Value = 1.6610564985e-03		Relative Error = 5.9139255102e-04
+	Steplength = 1.2165962153e+00		Optimality Res = 6.2924287815e-04
+Iteration: 83
+	Cost Value = 1.6258912825e-03		Relative Error = 2.1628270223e-02
+	Steplength = 4.8565398445e+01		Optimality Res = 6.2195994288e-04
+Iteration: 84
+	Cost Value = 1.6243534233e-03		Relative Error = 9.4675159086e-04
+	Steplength = 3.3015754318e+00		Optimality Res = 9.8971759797e-04
+Iteration: 85
+	Cost Value = 1.6228491605e-03		Relative Error = 9.2692708272e-04
+	Steplength = 2.0981652116e+00		Optimality Res = 1.2579916987e-03
+Iteration: 86
+	Cost Value = 1.6211316571e-03		Relative Error = 1.0594471536e-03
+	Steplength = 1.1061234892e+00		Optimality Res = 1.3748636150e-03
+Iteration: 87
+	Cost Value = 1.6202782063e-03		Relative Error = 5.2673103133e-04
+	Steplength = 1.0292364370e+00		Optimality Res = 8.4002465241e-04
+Iteration: 88
+	Cost Value = 1.6197853232e-03		Relative Error = 3.0428918427e-04
+	Steplength = 7.1037120358e-01		Optimality Res = 6.2876463811e-04
+Iteration: 89
+	Cost Value = 1.6178712778e-03		Relative Error = 1.1830640844e-03
+	Steplength = 3.2431951033e+00		Optimality Res = 5.4373548907e-04
+Iteration: 90
+	Cost Value = 1.6172545028e-03		Relative Error = 3.8137162039e-04
+	Steplength = 1.0324341815e+00		Optimality Res = 5.5865001997e-04
+Iteration: 91
+	Cost Value = 1.6122316777e-03		Relative Error = 3.1154487471e-03
+	Steplength = 1.1356171103e+01		Optimality Res = 5.4457446824e-04
+Iteration: 92
+	Cost Value = 1.6103192303e-03		Relative Error = 1.1876200181e-03
+	Steplength = 6.7298723914e-01		Optimality Res = 1.6436635268e-03
+Iteration: 93
+	Cost Value = 1.6099029623e-03		Relative Error = 2.5856714014e-04
+	Steplength = 7.3040428856e-01		Optimality Res = 5.3715883823e-04
+Iteration: 94
+	Cost Value = 1.6094998768e-03		Relative Error = 2.5044147500e-04
+	Steplength = 7.2533179565e-01		Optimality Res = 5.2385980927e-04
+Iteration: 95
+	Cost Value = 1.5413740942e-03		Relative Error = 4.4198084548e-02
+	Steplength = 1.5848032767e+02		Optimality Res = 5.2141186756e-04
+Iteration: 96
+	Cost Value = 1.5533797312e-03		Relative Error = 7.7287199859e-03
+	Steplength = 3.9456995007e+00		Optimality Res = 1.8540382001e-03
+Iteration: 97
+	Cost Value = 1.5515240550e-03		Relative Error = 1.1960344291e-03
+	Steplength = 1.5524173512e+00		Optimality Res = 4.3394835402e-03
+Iteration: 98
+	Cost Value = 1.5360695948e-03		Relative Error = 1.0061041710e-02
+	Steplength = 7.8595203530e-01		Optimality Res = 5.0316992651e-03
+Iteration: 99
+	Cost Value = 1.5347904762e-03		Relative Error = 8.3341573438e-04
+	Steplength = 6.5415519689e-01		Optimality Res = 1.3448152883e-03
+Iteration: 100
+	Cost Value = 1.5345548571e-03		Relative Error = 1.5354232557e-04
+	Steplength = 6.6132200742e-01		Optimality Res = 4.4641920237e-04
+Iteration: 101
+	Cost Value = 1.5335237783e-03		Relative Error = 6.7235919048e-04
+	Steplength = 4.0774844477e+00		Optimality Res = 3.9916127199e-04
+Iteration: 102
+	Cost Value = 1.5330258749e-03		Relative Error = 3.2478471076e-04
+	Steplength = 1.6029790445e+00		Optimality Res = 4.3573940093e-04
+Iteration: 103
+	Cost Value = 1.5319385208e-03		Relative Error = 7.0978966556e-04
+	Steplength = 4.2687085221e+00		Optimality Res = 3.7253198821e-04
+Iteration: 104
+	Cost Value = 1.5315651602e-03		Relative Error = 2.4377718184e-04
+	Steplength = 1.3874945687e+00		Optimality Res = 4.0150645888e-04
+Iteration: 105
+	Cost Value = 1.5308916889e-03		Relative Error = 4.3992091114e-04
+	Steplength = 5.5317009315e+00		Optimality Res = 3.8950804368e-04
+Iteration: 106
+	Cost Value = 1.5299782193e-03		Relative Error = 5.9704746495e-04
+	Steplength = 6.5436592109e-01		Optimality Res = 1.1434391077e-03
+Iteration: 107
+	Cost Value = 1.5297888278e-03		Relative Error = 1.2380233829e-04
+	Steplength = 7.3793101136e-01		Optimality Res = 3.6546692935e-04
+Iteration: 108
+	Cost Value = 1.5295419007e-03		Relative Error = 1.6143859935e-04
+	Steplength = 9.7980418907e-01		Optimality Res = 3.5975932493e-04
+Iteration: 109
+	Cost Value = 1.5030093120e-03		Relative Error = 1.7652976931e-02
+	Steplength = 1.2646799826e+02		Optimality Res = 3.5772658380e-04
+Iteration: 110
+	Cost Value = 1.5057868867e-03		Relative Error = 1.8446001293e-03
+	Steplength = 2.6798775469e+00		Optimality Res = 1.3131803162e-03
+Iteration: 111
+	Cost Value = 1.5049074562e-03		Relative Error = 5.8437516991e-04
+	Steplength = 1.2714147713e+00		Optimality Res = 2.7343298475e-03
+Iteration: 112
+	Cost Value = 1.5003271817e-03		Relative Error = 3.0528504300e-03
+	Steplength = 6.5832188056e-01		Optimality Res = 2.6704384394e-03
+Iteration: 113
+	Cost Value = 1.5001912721e-03		Relative Error = 9.0594859811e-05
+	Steplength = 6.4858217747e-01		Optimality Res = 3.4762600626e-04
+Iteration: 114
+	Cost Value = 1.5000279528e-03		Relative Error = 1.0887751351e-04
+	Steplength = 9.2263719579e-01		Optimality Res = 3.0701955442e-04
+Iteration: 115
+	Cost Value = 1.4977166652e-03		Relative Error = 1.5432074666e-03
+	Steplength = 1.5157671826e+01		Optimality Res = 2.9683153830e-04
+Iteration: 116
+	Cost Value = 1.4972661436e-03		Relative Error = 3.0089617005e-04
+	Steplength = 1.7491339535e+00		Optimality Res = 4.5163056022e-04
+Iteration: 117
+	Cost Value = 1.4968699423e-03		Relative Error = 2.6468647714e-04
+	Steplength = 2.5896256701e+00		Optimality Res = 3.1537198523e-04
+Iteration: 118
+	Cost Value = 1.4966778249e-03		Relative Error = 1.2836259706e-04
+	Steplength = 1.0702789625e+00		Optimality Res = 3.6369369141e-04
+Iteration: 119
+	Cost Value = 1.4963919079e-03		Relative Error = 1.9107089181e-04
+	Steplength = 2.4056088295e+00		Optimality Res = 3.2246213923e-04
+Iteration: 120
+	Cost Value = 1.4961829427e-03		Relative Error = 1.3966558730e-04
+	Steplength = 6.4487244017e-01		Optimality Res = 5.0069975359e-04
+Iteration: 121
+	Cost Value = 1.4960084501e-03		Relative Error = 1.1663874080e-04
+	Steplength = 1.1144105316e+00		Optimality Res = 2.8541608644e-04
+Iteration: 122
+	Cost Value = 1.4958113328e-03		Relative Error = 1.3177955701e-04
+	Steplength = 1.2633736882e+00		Optimality Res = 2.8476374616e-04
+Iteration: 123
+	Cost Value = 1.4693029680e-03		Relative Error = 1.8041455940e-02
+	Steplength = 5.3844841873e+02		Optimality Res = 2.8277354010e-04
+Iteration: 124
+	Cost Value = 1.4953208620e-03		Relative Error = 1.7399539200e-02
+	Steplength = 1.5209014219e+00		Optimality Res = 6.4735016570e-03
+Iteration: 125
+	Cost Value = 1.4425248231e-03		Relative Error = 3.6599743711e-02
+	Steplength = 6.3482128820e-01		Optimality Res = 9.1359131320e-03
+Iteration: 126
+	Cost Value = 1.4424839404e-03		Relative Error = 2.8341876102e-05
+	Steplength = 6.2992051511e-01		Optimality Res = 2.0942597519e-04
+Iteration: 127
+	Cost Value = 1.4422834495e-03		Relative Error = 1.3900937406e-04
+	Steplength = 4.4517369395e+00		Optimality Res = 1.8430587987e-04
+Iteration: 128
+	Cost Value = 1.4421901480e-03		Relative Error = 6.4694307338e-05
+	Steplength = 1.7513427253e+00		Optimality Res = 1.9706524516e-04
+Iteration: 129
+	Cost Value = 1.4419082395e-03		Relative Error = 1.9551074994e-04
+	Steplength = 6.7063676337e+00		Optimality Res = 1.7590495745e-04
+Iteration: 130
+	Cost Value = 1.4418296993e-03		Relative Error = 5.4472573597e-05
+	Steplength = 1.3322139574e+00		Optimality Res = 2.3472007047e-04
+Iteration: 131
+	Cost Value = 1.4417088089e-03		Relative Error = 8.3852130437e-05
+	Steplength = 2.8282154404e+00		Optimality Res = 1.8375473308e-04
+Iteration: 132
+	Cost Value = 1.4416557453e-03		Relative Error = 3.6807426495e-05
+	Steplength = 9.4825836185e-01		Optimality Res = 2.2505115990e-04
+Iteration: 133
+	Cost Value = 1.4415290292e-03		Relative Error = 8.7903966054e-05
+	Steplength = 2.8401777437e+00		Optimality Res = 1.7042510461e-04
+Iteration: 134
+	Cost Value = 1.4414885210e-03		Relative Error = 2.8101647645e-05
+	Steplength = 9.2958290142e-01		Optimality Res = 1.7796325926e-04
+Iteration: 135
+	Cost Value = 1.4409739551e-03		Relative Error = 3.5709591241e-04
+	Steplength = 1.2510086006e+01		Optimality Res = 1.6800582740e-04
+Iteration: 136
+	Cost Value = 1.4409113934e-03		Relative Error = 4.3418104482e-05
+	Steplength = 9.4909929175e-01		Optimality Res = 2.5569162350e-04
+Iteration: 137
+	Cost Value = 1.4408415101e-03		Relative Error = 4.8501733915e-05
+	Steplength = 1.7483480872e+00		Optimality Res = 1.7658319652e-04
+Iteration: 138
+	Cost Value = 1.4408057932e-03		Relative Error = 2.4789553922e-05
+	Steplength = 6.8715982479e-01		Optimality Res = 1.9319245240e-04
+Iteration: 139
+	Cost Value = 1.4406414201e-03		Relative Error = 1.1409716277e-04
+	Steplength = 3.9951389560e+00		Optimality Res = 1.6401283361e-04
+Iteration: 140
+	Cost Value = 1.4406031260e-03		Relative Error = 2.6581977108e-05
+	Steplength = 8.7617633103e-01		Optimality Res = 1.6990369438e-04
+Iteration: 141
+	Cost Value = 1.4400806170e-03		Relative Error = 3.6283318647e-04
+	Steplength = 1.5266213754e+01		Optimality Res = 1.6359161763e-04
+Iteration: 142
+	Cost Value = 1.4399528537e-03		Relative Error = 8.8727366004e-05
+	Steplength = 6.9100988139e-01		Optimality Res = 4.2722863194e-04
+Iteration: 143
+	Cost Value = 1.4399183698e-03		Relative Error = 2.3948521702e-05
+	Steplength = 8.4199493276e-01		Optimality Res = 1.6444249168e-04
+Iteration: 144
+	Cost Value = 1.4398919992e-03		Relative Error = 1.8314346240e-05
+	Steplength = 6.5865240391e-01		Optimality Res = 1.6004044438e-04
+Iteration: 145
+	Cost Value = 1.4343221157e-03		Relative Error = 3.8832863422e-03
+	Steplength = 1.6108628338e+02		Optimality Res = 1.5911657728e-04
+Iteration: 146
+	Cost Value = 1.4361880860e-03		Relative Error = 1.2992520876e-03
+	Steplength = 6.3388338036e+00		Optimality Res = 3.3790593706e-04
+Iteration: 147
+	Cost Value = 1.4371931621e-03		Relative Error = 6.9933259895e-04
+	Steplength = 1.6936436967e+00		Optimality Res = 1.5873873296e-03
+Iteration: 148
+	Cost Value = 1.4340475498e-03		Relative Error = 2.1935201720e-03
+	Steplength = 7.4202932768e-01		Optimality Res = 2.2452382309e-03
+Iteration: 149
+	Cost Value = 1.4339089521e-03		Relative Error = 9.6657284819e-05
+	Steplength = 6.4897258642e-01		Optimality Res = 4.4470841526e-04
+Iteration: 150
+	Cost Value = 1.4338806822e-03		Relative Error = 1.9715619431e-05
+	Steplength = 6.7081130683e-01		Optimality Res = 1.6411147890e-04
+Iteration: 151
+	Cost Value = 1.4337292294e-03		Relative Error = 1.0563563370e-04
+	Steplength = 5.6716703195e+00		Optimality Res = 1.4722374165e-04
+Iteration: 152
+	Cost Value = 1.4336558738e-03		Relative Error = 5.1166786131e-05
+	Steplength = 1.5127088778e+00		Optimality Res = 1.9578722689e-04
+Iteration: 153
+	Cost Value = 1.4335622390e-03		Relative Error = 6.5316152418e-05
+	Steplength = 3.1651978006e+00		Optimality Res = 1.4348236794e-04
+Iteration: 154
+	Cost Value = 1.4335178539e-03		Relative Error = 3.0962411230e-05
+	Steplength = 1.3144668571e+00		Optimality Res = 1.5183014031e-04
+Iteration: 155
+	Cost Value = 1.4334202421e-03		Relative Error = 6.8097114185e-05
+	Steplength = 7.8478599060e+00		Optimality Res = 1.4278712950e-04
+Iteration: 156
+	Cost Value = 1.4332626625e-03		Relative Error = 1.0994463235e-04
+	Steplength = 6.7111089630e-01		Optimality Res = 4.8159261868e-04
+Iteration: 157
+	Cost Value = 1.4332376937e-03		Relative Error = 1.7421271085e-05
+	Steplength = 7.6942374259e-01		Optimality Res = 1.4321465390e-04
+Iteration: 158
+	Cost Value = 1.4332110460e-03		Relative Error = 1.8593013791e-05
+	Steplength = 8.7837634035e-01		Optimality Res = 1.3635783065e-04
+Iteration: 159
+	Cost Value = 1.4309452681e-03		Relative Error = 1.5834133557e-03
+	Steplength = 9.4543466416e+01		Optimality Res = 1.3518491707e-04
+Iteration: 160
+	Cost Value = 1.4307881045e-03		Relative Error = 1.0984409595e-04
+	Steplength = 1.6189396084e+00		Optimality Res = 6.0348145868e-04
+Iteration: 161
+	Cost Value = 1.4306875070e-03		Relative Error = 7.0314108770e-05
+	Steplength = 1.1978713209e+00		Optimality Res = 6.4312820223e-04
+Iteration: 162
+	Cost Value = 1.4304753067e-03		Relative Error = 1.4834252264e-04
+	Steplength = 6.4632292974e-01		Optimality Res = 5.6860214437e-04
+Iteration: 163
+	Cost Value = 1.4304566340e-03		Relative Error = 1.3053668320e-05
+	Steplength = 7.1518403726e-01		Optimality Res = 1.3009186088e-04
+Iteration: 164
+	Cost Value = 1.4304267158e-03		Relative Error = 2.0915580952e-05
+	Steplength = 1.2023982629e+00		Optimality Res = 1.2709698528e-04
+Iteration: 165
+	Cost Value = 1.4285517249e-03		Relative Error = 1.3125117134e-03
+	Steplength = 9.1705663568e+01		Optimality Res = 1.2577348905e-04
+Iteration: 166
+	Cost Value = 1.4284308309e-03		Relative Error = 8.4634132613e-05
+	Steplength = 1.9605276498e+00		Optimality Res = 4.6737284336e-04
+Iteration: 167
+	Cost Value = 1.4286071991e-03		Relative Error = 1.2345465733e-04
+	Steplength = 1.5815197437e+00		Optimality Res = 5.6784064794e-04
+Iteration: 168
+	Cost Value = 1.4281701807e-03		Relative Error = 3.0599885801e-04
+	Steplength = 6.4761822786e-01		Optimality Res = 8.2419320814e-04
+Iteration: 169
+	Cost Value = 1.4281541586e-03		Relative Error = 1.1218725271e-05
+	Steplength = 6.6693594001e-01		Optimality Res = 1.2454049401e-04
+Iteration: 170
+	Cost Value = 1.4281315290e-03		Relative Error = 1.5845624271e-05
+	Steplength = 9.9685385448e-01		Optimality Res = 1.2021337423e-04
+Iteration: 171
+	Cost Value = 1.4268630013e-03		Relative Error = 8.8903252464e-04
+	Steplength = 7.2972143643e+01		Optimality Res = 1.1879646888e-04
+Iteration: 172
+	Cost Value = 1.4265975071e-03		Relative Error = 1.8610311623e-04
+	Steplength = 2.1986245475e+00		Optimality Res = 4.1600590379e-04
+Iteration: 173
+	Cost Value = 1.4266950376e-03		Relative Error = 6.8361155550e-05
+	Steplength = 2.2437562861e+00		Optimality Res = 2.9529865388e-04
+Iteration: 174
+	Cost Value = 1.4264707794e-03		Relative Error = 1.5721190952e-04
+	Steplength = 7.4989463600e-01		Optimality Res = 5.9375776601e-04
+Iteration: 175
+	Cost Value = 1.4264477203e-03		Relative Error = 1.6165435307e-05
+	Steplength = 7.0896700900e-01		Optimality Res = 1.6369011599e-04
+Iteration: 176
+	Cost Value = 1.4264333024e-03		Relative Error = 1.0107630991e-05
+	Steplength = 6.7341739357e-01		Optimality Res = 1.1751712902e-04
+Iteration: 177
+	Cost Value = 1.4259586971e-03		Relative Error = 3.3283245109e-04
+	Steplength = 3.0321359225e+01		Optimality Res = 1.1493008346e-04
+Iteration: 178
+	Cost Value = 1.4258281382e-03		Relative Error = 9.1567090828e-05
+	Steplength = 2.2347365648e+00		Optimality Res = 2.8124267041e-04
+Iteration: 179
+	Cost Value = 1.4258295239e-03		Relative Error = 9.7188335680e-07
+	Steplength = 2.4192108258e+00		Optimality Res = 2.0743866720e-04
+Optimal solution found.
+
+Elapsed time is 147.27583885 seconds.
+
+> File created: result_hfem.pdf
+
+==========================================================================================
+			Hybrid FEM for Optimal Control of Wave Equation
+==========================================================================================
+
+MESH DETAILS
+	Number of Nodes:                   441
+	Number of Elements:                800
+	Number of Edges:                   1240
+	Spatial Meshsize:                  0.0707106781
+	Number of Time Nodes:              100
+	Temporal Meshsize:                 0.0100000000
+
+MATRIX DETAILS
+	Size of Mass Matrix:               (2400, 2400)
+	Size of Stiffness Matrix:          (2400, 800)
+	Size of Lagrange Matrix:           (2400, 1160)
+	Size of System Matrix:             (2400, 2400)
+	System Matrix Density:             3.5194444444e-03
+	System Matrix Condition Number:    5.9952099551e+08
+	               Max Eigenvalue:     5.9952092270e+08
+	               Min Eigenvalue:     9.9999987855e-01
+
+COEFFICIENTS IN THE COST FUNCTIONAL
+	alpha (pressure)                   1.0e+01
+	beta  (velocity)                   1.0e+00
+	gamma (control)                    1.0e-05
+
+PARAMETERS
+	CG Tolerance                       1.0e-12
+	BB Tolerance                       1.0e-06
+	Penalty Term                       1.0e-10
+	Pressure Averaged                  True
+	Velocity Averaged                  False
+	Lagrange Averaged                  True
+
+------------------------------------------------------------------------------------------
+
+BARZILAI-BORWEIN GRADIENT METHOD		Tolerance = 1.0e-06		Version 3
+
+Iteration: 1
+	Cost Value = 3.3708110941e+00
+	Steplength = 1.0000000000e+00		Optimality Res = 1.7686737764e+00
+Iteration: 2
+	Cost Value = 3.0317385848e+00		Relative Error = 1.1184094533e-01
+	Steplength = 9.0431061261e-01		Optimality Res = 4.6689913038e-01
+Iteration: 3
+	Cost Value = 2.1819473338e+00		Relative Error = 3.8946460249e-01
+	Steplength = 3.3177308141e+00		Optimality Res = 3.8657825920e-01
+Iteration: 4
+	Cost Value = 1.3285864994e+00		Relative Error = 6.4230732048e-01
+	Steplength = 8.2078552761e+00		Optimality Res = 2.8942052078e-01
+Iteration: 5
+	Cost Value = 1.7221662420e+01		Relative Error = 9.2285376017e-01
+	Steplength = 1.1010047131e+01		Optimality Res = 3.9988767900e-01
+Iteration: 6
+	Cost Value = 7.7123021338e-01		Relative Error = 2.1330118972e+01
+	Steplength = 8.3963320543e-01		Optimality Res = 4.4473508616e+00
+Iteration: 7
+	Cost Value = 6.8637016270e-01		Relative Error = 1.2363598433e-01
+	Steplength = 8.3296711026e-01		Optimality Res = 3.5162101978e-01
+Iteration: 8
+	Cost Value = 6.6322812989e-01		Relative Error = 3.4893020619e-02
+	Steplength = 6.3509691888e-01		Optimality Res = 1.5419379312e-01
+Iteration: 9
+	Cost Value = 6.2959793385e-01		Relative Error = 5.3415353234e-02
+	Steplength = 1.3687860225e+00		Optimality Res = 1.1165471554e-01
+Iteration: 10
+	Cost Value = 1.4286752925e-01		Relative Error = 3.4068651370e+00
+	Steplength = 3.0542599454e+01		Optimality Res = 1.0835724158e-01
+Iteration: 11
+	Cost Value = 1.4561498138e+00		Relative Error = 9.0188679222e-01
+	Steplength = 4.7358105562e+01		Optimality Res = 5.3105980844e-02
+Iteration: 12
+	Cost Value = 5.3353742664e-02		Relative Error = 2.6292364905e+01
+	Steplength = 7.0049236296e-01		Optimality Res = 1.4868950068e+00
+Iteration: 13
+	Cost Value = 3.0737790978e-02		Relative Error = 7.3577023482e-01
+	Steplength = 6.4143932509e-01		Optimality Res = 1.7787583883e-01
+Iteration: 14
+	Cost Value = 2.7269801994e-02		Relative Error = 1.2717323670e-01
+	Steplength = 6.8617158402e-01		Optimality Res = 5.4789648965e-02
+Iteration: 15
+	Cost Value = 2.1657805558e-02		Relative Error = 2.5912119406e-01
+	Steplength = 2.1270617840e+00		Optimality Res = 4.2057448848e-02
+Iteration: 16
+	Cost Value = 1.8767442927e-02		Relative Error = 1.5400940030e-01
+	Steplength = 1.7269760716e+00		Optimality Res = 3.1674422281e-02
+Iteration: 17
+	Cost Value = 1.4193354420e-02		Relative Error = 3.2226973075e-01
+	Steplength = 4.7163953804e+00		Optimality Res = 2.5719041909e-02
+Iteration: 18
+	Cost Value = 1.3515000102e-02		Relative Error = 5.0192697927e-02
+	Steplength = 2.5596656988e+00		Optimality Res = 2.3239389293e-02
+Iteration: 19
+	Cost Value = 1.2883370368e-02		Relative Error = 4.9026746555e-02
+	Steplength = 1.7580569472e+00		Optimality Res = 3.2349823883e-02
+Iteration: 20
+	Cost Value = 1.1812850721e-02		Relative Error = 9.0623311212e-02
+	Steplength = 8.2388380672e-01		Optimality Res = 3.7038603529e-02
+Iteration: 21
+	Cost Value = 1.1517994819e-02		Relative Error = 2.5599586289e-02
+	Steplength = 8.3751778596e-01		Optimality Res = 1.5035390532e-02
+Iteration: 22
+	Cost Value = 1.1311468510e-02		Relative Error = 1.8258134067e-02
+	Steplength = 6.9119788393e-01		Optimality Res = 1.2604118970e-02
+Iteration: 23
+	Cost Value = 8.8928405961e-03		Relative Error = 2.7197472936e-01
+	Steplength = 1.0502467464e+01		Optimality Res = 1.2051759056e-02
+Iteration: 24
+	Cost Value = 9.4120981765e-03		Relative Error = 5.5169163206e-02
+	Steplength = 9.6232962658e+00		Optimality Res = 9.7216555216e-03
+Iteration: 25
+	Cost Value = 4.4432231438e-02		Relative Error = 7.8816958159e-01
+	Steplength = 3.6237508980e+00		Optimality Res = 5.3296471707e-02
+Iteration: 26
+	Cost Value = 7.3780971926e-03		Relative Error = 5.0221802828e+00
+	Steplength = 6.5506150923e-01		Optimality Res = 2.4065071693e-01
+Iteration: 27
+	Cost Value = 7.0720997071e-03		Relative Error = 4.3268265183e-02
+	Steplength = 6.4170615058e-01		Optimality Res = 1.8161946483e-02
+Iteration: 28
+	Cost Value = 6.9235162119e-03		Relative Error = 2.1460698672e-02
+	Steplength = 9.4624597245e-01		Optimality Res = 9.8009417098e-03
+Iteration: 29
+	Cost Value = 6.7294840715e-03		Relative Error = 2.8833137633e-02
+	Steplength = 2.0330344091e+00		Optimality Res = 7.1206523536e-03
+Iteration: 30
+	Cost Value = 6.6011144998e-03		Relative Error = 1.9446651264e-02
+	Steplength = 1.4149319461e+00		Optimality Res = 6.8119499680e-03
+Iteration: 31
+	Cost Value = 5.1370036468e-03		Relative Error = 2.8501261702e-01
+	Steplength = 1.9366561000e+01		Optimality Res = 6.5953961861e-03
+Iteration: 32
+	Cost Value = 5.4402239244e-03		Relative Error = 5.5736727345e-02
+	Steplength = 4.0437346740e+00		Optimality Res = 8.3555275184e-03
+Iteration: 33
+	Cost Value = 5.3090622588e-03		Relative Error = 2.4705241567e-02
+	Steplength = 1.3305106572e+00		Optimality Res = 2.8042069387e-02
+Iteration: 34
+	Cost Value = 4.7889321170e-03		Relative Error = 1.0861088215e-01
+	Steplength = 6.7813347903e-01		Optimality Res = 2.8173851362e-02
+Iteration: 35
+	Cost Value = 4.7540900672e-03		Relative Error = 7.3288577415e-03
+	Steplength = 6.5773156497e-01		Optimality Res = 5.3521599613e-03
+Iteration: 36
+	Cost Value = 4.7197842123e-03		Relative Error = 7.2685218914e-03
+	Steplength = 7.2401953108e-01		Optimality Res = 4.8323121977e-03
+Iteration: 37
+	Cost Value = 3.2326432729e-03		Relative Error = 4.6003867852e-01
+	Steplength = 4.1453241883e+01		Optimality Res = 4.7722833002e-03
+Iteration: 38
+	Cost Value = 3.9718141255e-03		Relative Error = 1.8610408977e-01
+	Steplength = 5.8052859500e+00		Optimality Res = 7.5856347566e-03
+Iteration: 39
+	Cost Value = 3.1319876983e-03		Relative Error = 2.6814486775e-01
+	Steplength = 1.3267054838e+00		Optimality Res = 2.8692186904e-02
+Iteration: 40
+	Cost Value = 3.0516930426e-03		Relative Error = 2.6311511205e-02
+	Steplength = 1.0945714000e+00		Optimality Res = 9.6418123625e-03
+Iteration: 41
+	Cost Value = 3.0254478922e-03		Relative Error = 8.6747983563e-03
+	Steplength = 9.4436099208e-01		Optimality Res = 5.5380559216e-03
+Iteration: 42
+	Cost Value = 3.0121527255e-03		Relative Error = 4.4138421644e-03
+	Steplength = 6.4622545709e-01		Optimality Res = 3.5840768375e-03
+Iteration: 43
+	Cost Value = 2.9884763249e-03		Relative Error = 7.9225658925e-03
+	Steplength = 1.5690733507e+00		Optimality Res = 2.7202413109e-03
+Iteration: 44
+	Cost Value = 2.9412025714e-03		Relative Error = 1.6072933551e-02
+	Steplength = 3.2286245516e+00		Optimality Res = 2.6867791724e-03
+Iteration: 45
+	Cost Value = 3.9156645984e-03		Relative Error = 2.4886248617e-01
+	Steplength = 1.1820585126e+02		Optimality Res = 2.6379191027e-03
+Iteration: 46
+	Cost Value = 2.2389380605e-03		Relative Error = 7.4889366858e-01
+	Steplength = 8.7782862278e-01		Optimality Res = 5.5234602193e-02
+Iteration: 47
+	Cost Value = 1.9485715759e-03		Relative Error = 1.4901504685e-01
+	Steplength = 6.4179094241e-01		Optimality Res = 2.1316261141e-02
+Iteration: 48
+	Cost Value = 1.9457573268e-03		Relative Error = 1.4463515154e-03
+	Steplength = 6.3548993776e-01		Optimality Res = 1.6340870822e-03
+Iteration: 49
+	Cost Value = 1.9395869945e-03		Relative Error = 3.1812609357e-03
+	Steplength = 2.2195926145e+00		Optimality Res = 1.3247417344e-03
+Iteration: 50
+	Cost Value = 1.9359861683e-03		Relative Error = 1.8599441751e-03
+	Steplength = 1.2958965831e+00		Optimality Res = 1.2681080268e-03
+Iteration: 51
+	Cost Value = 1.9173129210e-03		Relative Error = 9.7392799296e-03
+	Steplength = 7.4464640100e+00		Optimality Res = 1.1880954532e-03
+Iteration: 52
+	Cost Value = 1.9119986223e-03		Relative Error = 2.7794469554e-03
+	Steplength = 2.2740397852e+00		Optimality Res = 1.2191155898e-03
+Iteration: 53
+	Cost Value = 1.9024419059e-03		Relative Error = 5.0233945924e-03
+	Steplength = 6.1110702161e+00		Optimality Res = 1.2035065769e-03
+Iteration: 54
+	Cost Value = 1.8958216910e-03		Relative Error = 3.4920029165e-03
+	Steplength = 1.1291984541e+00		Optimality Res = 2.3382549499e-03
+Iteration: 55
+	Cost Value = 1.8930142982e-03		Relative Error = 1.4830277646e-03
+	Steplength = 1.2969523055e+00		Optimality Res = 1.2543371737e-03
+Iteration: 56
+	Cost Value = 1.8913214796e-03		Relative Error = 8.9504543621e-04
+	Steplength = 6.9226290889e-01		Optimality Res = 1.2294168224e-03
+Iteration: 57
+	Cost Value = 1.8857701416e-03		Relative Error = 2.9438041852e-03
+	Steplength = 2.6948526731e+00		Optimality Res = 1.0613855229e-03
+Iteration: 58
+	Cost Value = 1.8830438421e-03		Relative Error = 1.4478151605e-03
+	Steplength = 1.3523663493e+00		Optimality Res = 1.0621323516e-03
+Iteration: 59
+	Cost Value = 1.8718290570e-03		Relative Error = 5.9913511211e-03
+	Steplength = 1.9737499356e+01		Optimality Res = 1.0591386932e-03
+Iteration: 60
+	Cost Value = 1.8446497240e-03		Relative Error = 1.4734143122e-02
+	Steplength = 6.8342588330e-01		Optimality Res = 6.4964947674e-03
+Iteration: 61
+	Cost Value = 1.8434151037e-03		Relative Error = 6.6974622978e-04
+	Steplength = 6.4833539339e-01		Optimality Res = 1.0715422859e-03
+Iteration: 62
+	Cost Value = 1.8423641191e-03		Relative Error = 5.7045433408e-04
+	Steplength = 6.4250205707e-01		Optimality Res = 9.3638401613e-04
+Iteration: 63
+	Cost Value = 1.6636840576e-03		Relative Error = 1.0740023661e-01
+	Steplength = 1.8909133128e+02		Optimality Res = 9.3173757875e-04
+Iteration: 64
+	Cost Value = 2.7747018289e-03		Relative Error = 4.0040978808e-01
+	Steplength = 1.8210379877e+01		Optimality Res = 2.2383886441e-03
+Iteration: 65
+	Cost Value = 1.6958496698e-03		Relative Error = 6.3617204893e-01
+	Steplength = 1.2682880229e+00		Optimality Res = 3.2036826671e-02
+Iteration: 66
+	Cost Value = 1.6404744349e-03		Relative Error = 3.3755621959e-02
+	Steplength = 1.1053018555e+00		Optimality Res = 7.2522744894e-03
+Iteration: 67
+	Cost Value = 1.6380795830e-03		Relative Error = 1.4619875509e-03
+	Steplength = 1.1160779487e+00		Optimality Res = 1.6506263026e-03
+Iteration: 68
+	Cost Value = 1.6370184403e-03		Relative Error = 6.4821670970e-04
+	Steplength = 8.3347735172e-01		Optimality Res = 9.9419613338e-04
+Iteration: 69
+	Cost Value = 1.6361792519e-03		Relative Error = 5.1289512096e-04
+	Steplength = 1.1320342270e+00		Optimality Res = 6.4960701873e-04
+Iteration: 70
+	Cost Value = 1.6356544278e-03		Relative Error = 3.2086488360e-04
+	Steplength = 7.1473619190e-01		Optimality Res = 6.2159825116e-04
+Iteration: 71
+	Cost Value = 1.6303845069e-03		Relative Error = 3.2323178528e-03
+	Steplength = 7.8212312392e+00		Optimality Res = 5.9205287811e-04
+Iteration: 72
+	Cost Value = 1.6292155238e-03		Relative Error = 7.1751289062e-04
+	Steplength = 2.2802293442e+00		Optimality Res = 6.2417180348e-04
+Iteration: 73
+	Cost Value = 1.6335500453e-03		Relative Error = 2.6534366194e-03
+	Steplength = 3.6698527915e+00		Optimality Res = 8.8015265388e-04
+Iteration: 74
+	Cost Value = 1.6263528565e-03		Relative Error = 4.4253550390e-03
+	Steplength = 6.3565876719e-01		Optimality Res = 3.3241066327e-03
+Iteration: 75
+	Cost Value = 1.6259773024e-03		Relative Error = 2.3097125757e-04
+	Steplength = 6.5257966592e-01		Optimality Res = 5.4083283141e-04
+Iteration: 76
+	Cost Value = 1.6247912929e-03		Relative Error = 7.2994579511e-04
+	Steplength = 2.0945657020e+00		Optimality Res = 5.3783988424e-04
+Iteration: 77
+	Cost Value = 1.5773260094e-03		Relative Error = 3.0092246750e-02
+	Steplength = 1.4611715870e+02		Optimality Res = 5.3062367098e-04
+Iteration: 78
+	Cost Value = 1.7368152575e-03		Relative Error = 9.1828562296e-02
+	Steplength = 1.3333163093e+01		Optimality Res = 1.2573853902e-03
+Iteration: 79
+	Cost Value = 1.6223250925e-03		Relative Error = 7.0571653901e-02
+	Steplength = 1.4267762104e+00		Optimality Res = 1.2540074141e-02
+Iteration: 80
+	Cost Value = 1.5783761412e-03		Relative Error = 2.7844409319e-02
+	Steplength = 9.6160145906e-01		Optimality Res = 8.3139057091e-03
+Iteration: 81
+	Cost Value = 1.5704113418e-03		Relative Error = 5.0717918192e-03
+	Steplength = 7.4108710929e-01		Optimality Res = 3.4802413335e-03
+Iteration: 82
+	Cost Value = 1.5699244361e-03		Relative Error = 3.1014594131e-04
+	Steplength = 6.5783669230e-01		Optimality Res = 7.6440872650e-04
+Iteration: 83
+	Cost Value = 1.5695477878e-03		Relative Error = 2.3997248006e-04
+	Steplength = 1.1632200934e+00		Optimality Res = 4.5487392056e-04
+Iteration: 84
+	Cost Value = 1.5691422865e-03		Relative Error = 2.5842227884e-04
+	Steplength = 1.4457305984e+00		Optimality Res = 4.1211079299e-04
+Iteration: 85
+	Cost Value = 1.5623128056e-03		Relative Error = 4.3713914546e-03
+	Steplength = 3.2533040272e+01		Optimality Res = 4.0473398424e-04
+Iteration: 86
+	Cost Value = 1.5623923336e-03		Relative Error = 5.0901397041e-05
+	Steplength = 1.4274577282e+00		Optimality Res = 1.2462166469e-03
+Iteration: 87
+	Cost Value = 1.5609438827e-03		Relative Error = 9.2793271776e-04
+	Steplength = 7.4321181871e-01		Optimality Res = 1.4979972595e-03
+Iteration: 88
+	Cost Value = 1.5607826947e-03		Relative Error = 1.0327384797e-04
+	Steplength = 6.3437346202e-01		Optimality Res = 4.2336188024e-04
+Iteration: 89
+	Cost Value = 1.5604210276e-03		Relative Error = 2.3177531573e-04
+	Steplength = 1.9448396055e+00		Optimality Res = 3.3644140133e-04
+Iteration: 90
+	Cost Value = 1.5599730982e-03		Relative Error = 2.8713917113e-04
+	Steplength = 2.4474737972e+00		Optimality Res = 3.3294033020e-04
+Iteration: 91
+	Cost Value = 1.5367787340e-03		Relative Error = 1.5092845631e-02
+	Steplength = 2.4631746160e+02		Optimality Res = 3.2972163745e-04
+Iteration: 92
+	Cost Value = 1.6003493003e-03		Relative Error = 3.9722931940e-02
+	Steplength = 4.3856501568e+00		Optimality Res = 2.1293460046e-03
+Iteration: 93
+	Cost Value = 1.5419720852e-03		Relative Error = 3.7858801541e-02
+	Steplength = 9.2565602652e-01		Optimality Res = 9.8089581692e-03
+Iteration: 94
+	Cost Value = 1.5313337521e-03		Relative Error = 6.9471028661e-03
+	Steplength = 6.8254446719e-01		Optimality Res = 4.0337561338e-03
+Iteration: 95
+	Cost Value = 1.5309480402e-03		Relative Error = 2.5194315874e-04
+	Steplength = 6.6557050058e-01		Optimality Res = 6.1909514886e-04
+Iteration: 96
+	Cost Value = 1.5306622197e-03		Relative Error = 1.8672998707e-04
+	Steplength = 9.2695791200e-01		Optimality Res = 4.1517178045e-04
+Iteration: 97
+	Cost Value = 1.5298048107e-03		Relative Error = 5.6046954052e-04
+	Steplength = 3.7007446783e+00		Optimality Res = 3.6069703461e-04
+Iteration: 98
+	Cost Value = 1.5293860332e-03		Relative Error = 2.7382064576e-04
+	Steplength = 1.8292042103e+00		Optimality Res = 3.5891066987e-04
+Iteration: 99
+	Cost Value = 1.5283368564e-03		Relative Error = 6.8648268177e-04
+	Steplength = 6.5484289940e+00		Optimality Res = 3.3836584292e-04
+Iteration: 100
+	Cost Value = 1.5279084178e-03		Relative Error = 2.8040854159e-04
+	Steplength = 8.2189524295e-01		Optimality Res = 7.2974635867e-04
+Iteration: 101
+	Cost Value = 1.5277278887e-03		Relative Error = 1.1816839147e-04
+	Steplength = 8.4013140107e-01		Optimality Res = 3.6771325306e-04
+Iteration: 102
+	Cost Value = 1.5276008747e-03		Relative Error = 8.3146066211e-05
+	Steplength = 6.8131973071e-01		Optimality Res = 3.1303190852e-04
+Iteration: 103
+	Cost Value = 1.5252721067e-03		Relative Error = 1.5267885355e-03
+	Steplength = 1.3922592562e+01		Optimality Res = 3.0418680264e-04
+Iteration: 104
+	Cost Value = 1.5249402049e-03		Relative Error = 2.1764910141e-04
+	Steplength = 3.5668170525e+00		Optimality Res = 3.2296702604e-04
+Iteration: 105
+	Cost Value = 1.5265978461e-03		Relative Error = 1.0858401474e-03
+	Steplength = 3.1769043663e+00		Optimality Res = 5.7395833650e-04
+Iteration: 106
+	Cost Value = 1.5242780995e-03		Relative Error = 1.5218656968e-03
+	Steplength = 6.9304394774e-01		Optimality Res = 1.8888072625e-03
+Iteration: 107
+	Cost Value = 1.5241549775e-03		Relative Error = 8.0780495094e-05
+	Steplength = 6.6357458923e-01		Optimality Res = 3.4702697437e-04
+Iteration: 108
+	Cost Value = 1.5240497470e-03		Relative Error = 6.9046670609e-05
+	Steplength = 7.9221689547e-01		Optimality Res = 2.7067512005e-04
+Iteration: 109
+	Cost Value = 1.5228590039e-03		Relative Error = 7.8191285396e-04
+	Steplength = 1.0428835727e+01		Optimality Res = 2.6042965595e-04
+Iteration: 110
+	Cost Value = 1.5226121880e-03		Relative Error = 1.6210036482e-04
+	Steplength = 1.6994841921e+00		Optimality Res = 3.3343252568e-04
+Iteration: 111
+	Cost Value = 1.5223691895e-03		Relative Error = 1.5961860194e-04
+	Steplength = 2.4089707676e+00		Optimality Res = 2.6075254922e-04
+Iteration: 112
+	Cost Value = 1.5222526899e-03		Relative Error = 7.6531032585e-05
+	Steplength = 9.4674726468e-01		Optimality Res = 2.9564014462e-04
+Iteration: 113
+	Cost Value = 1.5220447753e-03		Relative Error = 1.3660215894e-04
+	Steplength = 2.2095229069e+00		Optimality Res = 2.5190522534e-04
+Iteration: 114
+	Cost Value = 1.5219532090e-03		Relative Error = 6.0163716255e-05
+	Steplength = 6.6795366482e-01		Optimality Res = 3.0645861785e-04
+Iteration: 115
+	Cost Value = 1.5217779946e-03		Relative Error = 1.1513794418e-04
+	Steplength = 1.7499526853e+00		Optimality Res = 2.3619237792e-04
+Iteration: 116
+	Cost Value = 1.5216407449e-03		Relative Error = 9.0198461543e-05
+	Steplength = 1.3938787553e+00		Optimality Res = 2.3500355565e-04
+Iteration: 117
+	Cost Value = 1.5204577606e-03		Relative Error = 7.7804483339e-04
+	Steplength = 8.2153647334e+01		Optimality Res = 2.3389410571e-04
+Iteration: 118
+	Cost Value = 1.5152842886e-03		Relative Error = 3.4141923786e-03
+	Steplength = 7.9751027819e-01		Optimality Res = 2.9486391194e-03
+Iteration: 119
+	Cost Value = 1.5148769576e-03		Relative Error = 2.6888716104e-04
+	Steplength = 6.3656808176e-01		Optimality Res = 7.8943928271e-04
+Iteration: 120
+	Cost Value = 1.5148406786e-03		Relative Error = 2.3949057978e-05
+	Steplength = 6.3312247591e-01		Optimality Res = 1.9378045539e-04
+Iteration: 121
+	Cost Value = 1.5055059557e-03		Relative Error = 6.2003892140e-03
+	Steplength = 2.0995104567e+02		Optimality Res = 1.9297526133e-04
+Iteration: 122
+	Cost Value = 1.5062433825e-03		Relative Error = 4.8958010462e-04
+	Steplength = 2.9283928941e+00		Optimality Res = 8.8961876062e-04
+Iteration: 123
+	Cost Value = 1.5044643557e-03		Relative Error = 1.1824984767e-03
+	Steplength = 1.3085148780e+00		Optimality Res = 1.2625901998e-03
+Iteration: 124
+	Cost Value = 1.5043196560e-03		Relative Error = 9.6189472710e-05
+	Steplength = 1.1663173413e+00		Optimality Res = 3.3014503620e-04
+Iteration: 125
+	Cost Value = 1.5042464672e-03		Relative Error = 4.8654748967e-05
+	Steplength = 1.5205467442e+00		Optimality Res = 1.7645295154e-04
+Iteration: 126
+	Cost Value = 1.5041950265e-03		Relative Error = 3.4198153005e-05
+	Steplength = 1.1209605264e+00		Optimality Res = 1.6945859750e-04
+Iteration: 127
+	Cost Value = 1.5033909341e-03		Relative Error = 5.3485251198e-04
+	Steplength = 2.4771332521e+01		Optimality Res = 1.6705575770e-04
+Iteration: 128
+	Cost Value = 1.5030912020e-03		Relative Error = 1.9941047531e-04
+	Steplength = 7.6165516593e-01		Optimality Res = 6.7716190391e-04
+Iteration: 129
+	Cost Value = 1.5030525676e-03		Relative Error = 2.5703979169e-05
+	Steplength = 6.9322386383e-01		Optimality Res = 2.0646771017e-04
+Iteration: 130
+	Cost Value = 1.5030268161e-03		Relative Error = 1.7133062372e-05
+	Steplength = 6.4900086422e-01		Optimality Res = 1.5919112906e-04
+Iteration: 131
+	Cost Value = 1.5013149782e-03		Relative Error = 1.1402257074e-03
+	Steplength = 4.9571820171e+01		Optimality Res = 1.5793211626e-04
+Iteration: 132
+	Cost Value = 1.5011824329e-03		Relative Error = 8.8293892783e-05
+	Steplength = 2.9837555717e+00		Optimality Res = 3.1574043699e-04
+Iteration: 133
+	Cost Value = 1.5011015532e-03		Relative Error = 5.3880287498e-05
+	Steplength = 2.2515675354e+00		Optimality Res = 3.4006907533e-04
+Iteration: 134
+	Cost Value = 1.5009790530e-03		Relative Error = 8.1613520542e-05
+	Steplength = 1.1348663604e+00		Optimality Res = 3.7655920902e-04
+Iteration: 135
+	Cost Value = 1.5009292351e-03		Relative Error = 3.3191335483e-05
+	Steplength = 1.0813561489e+00		Optimality Res = 2.4343240945e-04
+Iteration: 136
+	Cost Value = 1.5008964806e-03		Relative Error = 2.1823326135e-05
+	Steplength = 6.5473118554e-01		Optimality Res = 1.9857526663e-04
+Iteration: 137
+	Cost Value = 1.5008407224e-03		Relative Error = 3.7151268280e-05
+	Steplength = 1.7064965097e+00		Optimality Res = 1.4852437908e-04
+Iteration: 138
+	Cost Value = 1.5007636953e-03		Relative Error = 5.1325259750e-05
+	Steplength = 2.3928313494e+00		Optimality Res = 1.4776086767e-04
+Iteration: 139
+	Cost Value = 1.5089028097e-03		Relative Error = 5.3940613637e-03
+	Steplength = 1.2813150123e+02		Optimality Res = 1.4829321683e-04
+Iteration: 140
+	Cost Value = 1.4970804427e-03		Relative Error = 7.8969483606e-03
+	Steplength = 6.8320585479e-01		Optimality Res = 4.3199362545e-03
+Iteration: 141
+	Cost Value = 1.4969580195e-03		Relative Error = 8.1781362604e-05
+	Steplength = 6.3899430844e-01		Optimality Res = 4.1130078118e-04
+Iteration: 142
+	Cost Value = 1.4969189579e-03		Relative Error = 2.6094656978e-05
+	Steplength = 6.9226936134e-01		Optimality Res = 1.9576174997e-04
+Iteration: 143
+	Cost Value = 1.4966988720e-03		Relative Error = 1.4704755408e-04
+	Steplength = 6.7362966755e+00		Optimality Res = 1.8061875275e-04
+Iteration: 144
+	Cost Value = 1.4966281880e-03		Relative Error = 4.7228832198e-05
+	Steplength = 4.4570010559e+00		Optimality Res = 1.6674785116e-04
+Iteration: 145
+	Cost Value = 1.4968906290e-03		Relative Error = 1.7532410025e-04
+	Steplength = 4.0147001082e+00		Optimality Res = 2.6995850603e-04
+Iteration: 146
+	Cost Value = 1.4964617091e-03		Relative Error = 2.8662268756e-04
+	Steplength = 1.1122244894e+00		Optimality Res = 6.4774652993e-04
+Iteration: 147
+	Cost Value = 1.4964162625e-03		Relative Error = 3.0370276578e-05
+	Steplength = 1.1117341424e+00		Optimality Res = 2.0366664951e-04
+Iteration: 148
+	Cost Value = 1.4963919267e-03		Relative Error = 1.6262985063e-05
+	Steplength = 8.6135194071e-01		Optimality Res = 1.4852734454e-04
+Iteration: 149
+	Cost Value = 1.4963050878e-03		Relative Error = 5.8035574777e-05
+	Steplength = 3.8964162599e+00		Optimality Res = 1.3344893494e-04
+Iteration: 150
+	Cost Value = 1.4962797889e-03		Relative Error = 1.6907841499e-05
+	Steplength = 7.0539584668e-01		Optimality Res = 1.7254478092e-04
+Iteration: 151
+	Cost Value = 1.4962367878e-03		Relative Error = 2.8739509824e-05
+	Steplength = 1.7810084026e+00		Optimality Res = 1.3174736031e-04
+Iteration: 152
+	Cost Value = 1.4962178535e-03		Relative Error = 1.2654806429e-05
+	Steplength = 7.7063608620e-01		Optimality Res = 1.3277581881e-04
+Iteration: 153
+	Cost Value = 1.4956132391e-03		Relative Error = 4.0425852674e-04
+	Steplength = 2.6509825331e+01		Optimality Res = 1.3072066524e-04
+Iteration: 154
+	Cost Value = 1.4955686828e-03		Relative Error = 2.9792228752e-05
+	Steplength = 8.8767403706e-01		Optimality Res = 2.4337331428e-04
+Iteration: 155
+	Cost Value = 1.4955431358e-03		Relative Error = 1.7082031478e-05
+	Steplength = 9.6462580575e-01		Optimality Res = 1.5289551009e-04
+Iteration: 156
+	Cost Value = 1.4955269138e-03		Relative Error = 1.0847035099e-05
+	Steplength = 6.3772065586e-01		Optimality Res = 1.3538512547e-04
+Iteration: 157
+	Cost Value = 1.4953450625e-03		Relative Error = 1.2161159150e-04
+	Steplength = 7.8693794531e+00		Optimality Res = 1.2816631649e-04
+Iteration: 158
+	Cost Value = 1.4952360889e-03		Relative Error = 7.2880513712e-05
+	Steplength = 4.7846588197e+00		Optimality Res = 1.2782713507e-04
+Iteration: 159
+	Cost Value = 1.5193994243e-03		Relative Error = 1.5903214736e-02
+	Steplength = 1.5447021622e+02		Optimality Res = 1.3060518802e-04
+Iteration: 160
+	Cost Value = 1.4947832605e-03		Relative Error = 1.6468048840e-02
+	Steplength = 8.0467084713e-01		Optimality Res = 6.1654113677e-03
+Iteration: 161
+	Cost Value = 1.4923026395e-03		Relative Error = 1.6622774775e-03
+	Steplength = 7.1893593650e-01		Optimality Res = 1.8431061426e-03
+Iteration: 162
+	Cost Value = 1.4919914309e-03		Relative Error = 2.0858600022e-04
+	Steplength = 7.3293393699e-01		Optimality Res = 5.6670886754e-04
+Iteration: 163
+	Cost Value = 1.4918629386e-03		Relative Error = 8.6128754919e-05
+	Steplength = 1.4274836043e+00		Optimality Res = 2.9800928823e-04
+Iteration: 164
+	Cost Value = 1.4918306344e-03		Relative Error = 2.1654083402e-05
+	Steplength = 1.4482314860e+00		Optimality Res = 1.3932145068e-04
+Iteration: 165
+	Cost Value = 1.4918026429e-03		Relative Error = 1.8763573675e-05
+	Steplength = 3.3665820253e+00		Optimality Res = 1.2788888716e-04
+Iteration: 166
+	Cost Value = 1.4917552555e-03		Relative Error = 3.1766155583e-05
+	Steplength = 6.6892248361e-01		Optimality Res = 2.6147016781e-04
+Iteration: 167
+	Cost Value = 1.4917398943e-03		Relative Error = 1.0297502141e-05
+	Steplength = 8.3756341479e-01		Optimality Res = 1.1532410089e-04
+Iteration: 168
+	Cost Value = 1.4917248785e-03		Relative Error = 1.0066053668e-05
+	Steplength = 8.3503765538e-01		Optimality Res = 1.1413694984e-04
+Iteration: 169
+	Cost Value = 1.4886320959e-03		Relative Error = 2.0776003890e-03
+	Steplength = 2.0773847281e+02		Optimality Res = 1.1366014304e-04
+Iteration: 170
+	Cost Value = 1.4891247272e-03		Relative Error = 3.3081937312e-04
+	Steplength = 2.2528421585e+00		Optimality Res = 5.8894085466e-04
+Iteration: 171
+	Cost Value = 1.4886366794e-03		Relative Error = 3.2784882948e-04
+	Steplength = 1.0719055401e+00		Optimality Res = 1.1599876102e-03
+Iteration: 172
+	Cost Value = 1.4882256899e-03		Relative Error = 2.7616073086e-04
+	Steplength = 6.4063089354e-01		Optimality Res = 8.0064332907e-04
+Iteration: 173
+	Cost Value = 1.4882145954e-03		Relative Error = 7.4549298451e-06
+	Steplength = 6.5626901267e-01		Optimality Res = 1.1246224798e-04
+Iteration: 174
+	Cost Value = 1.4881895602e-03		Relative Error = 1.6822589649e-05
+	Steplength = 1.7120378765e+00		Optimality Res = 1.0676577698e-04
+Iteration: 175
+	Cost Value = 1.4880045594e-03		Relative Error = 1.2432809371e-04
+	Steplength = 1.4839508992e+01		Optimality Res = 1.0225673961e-04
+Iteration: 176
+	Cost Value = 1.4879611945e-03		Relative Error = 2.9143831144e-05
+	Steplength = 4.1170917703e+00		Optimality Res = 1.1735475441e-04
+Iteration: 177
+	Cost Value = 1.4881196710e-03		Relative Error = 1.0649444705e-04
+	Steplength = 4.9997439614e+00		Optimality Res = 1.5490074500e-04
+Iteration: 178
+	Cost Value = 1.4879116547e-03		Relative Error = 1.3980423687e-04
+	Steplength = 9.1190403844e-01		Optimality Res = 5.8049097082e-04
+Iteration: 179
+	Cost Value = 1.4878634053e-03		Relative Error = 3.2428615006e-05
+	Steplength = 7.7239698374e-01		Optimality Res = 2.6161119934e-04
+Iteration: 180
+	Cost Value = 1.4878514407e-03		Relative Error = 8.0415610776e-06
+	Steplength = 6.7381811446e-01		Optimality Res = 1.1850109750e-04
+Iteration: 181
+	Cost Value = 1.4878130532e-03		Relative Error = 2.5801246136e-05
+	Steplength = 3.0575308483e+00		Optimality Res = 1.0149058882e-04
+Iteration: 182
+	Cost Value = 1.4877931764e-03		Relative Error = 1.3359924424e-05
+	Steplength = 1.5206198747e+00		Optimality Res = 1.0202632828e-04
+Iteration: 183
+	Cost Value = 1.4877067022e-03		Relative Error = 5.8125849722e-05
+	Steplength = 1.2946005517e+01		Optimality Res = 9.9573859202e-05
+Iteration: 184
+	Cost Value = 1.4876247665e-03		Relative Error = 5.5078241686e-05
+	Steplength = 6.8272904563e-01		Optimality Res = 3.5251384469e-04
+Iteration: 185
+	Cost Value = 1.4876147027e-03		Relative Error = 6.7650211884e-06
+	Steplength = 7.2019842405e-01		Optimality Res = 1.0430789508e-04
+Iteration: 186
+	Cost Value = 1.4876038921e-03		Relative Error = 7.2671131956e-06
+	Steplength = 8.6118667146e-01		Optimality Res = 9.8245991772e-05
+Iteration: 187
+	Cost Value = 1.4871240023e-03		Relative Error = 3.2269659245e-04
+	Steplength = 4.4108145363e+01		Optimality Res = 9.7266300878e-05
+Iteration: 188
+	Cost Value = 1.4870660900e-03		Relative Error = 3.8943981521e-05
+	Steplength = 1.6198816728e+00		Optimality Res = 2.2445412924e-04
+Iteration: 189
+	Cost Value = 1.4870603190e-03		Relative Error = 3.8807979784e-06
+	Steplength = 1.5951647645e+00		Optimality Res = 1.7509777076e-04
+Iteration: 190
+	Cost Value = 1.4870240219e-03		Relative Error = 2.4409270578e-05
+	Steplength = 6.7023679025e-01		Optimality Res = 2.3117280635e-04
+Iteration: 191
+	Cost Value = 1.4870142643e-03		Relative Error = 6.5618620581e-06
+	Steplength = 8.1186586165e-01		Optimality Res = 9.5821281076e-05
+Iteration: 192
+	Cost Value = 1.4870053500e-03		Relative Error = 5.9948168286e-06
+	Steplength = 7.7122288704e-01		Optimality Res = 9.4760025335e-05
+Iteration: 193
+	Cost Value = 1.4847619817e-03		Relative Error = 1.5109278923e-03
+	Steplength = 2.3378564822e+02		Optimality Res = 9.4364998315e-05
+Iteration: 194
+	Cost Value = 1.4852206413e-03		Relative Error = 3.0881584054e-04
+	Steplength = 2.9264606724e+00		Optimality Res = 4.4186834553e-04
+Iteration: 195
+	Cost Value = 1.4853448587e-03		Relative Error = 8.3628654584e-05
+	Steplength = 1.3799534138e+00		Optimality Res = 1.0390868630e-03
+Iteration: 196
+	Cost Value = 1.4844568898e-03		Relative Error = 5.9817763677e-04
+	Steplength = 6.5569292239e-01		Optimality Res = 1.1805978751e-03
+Iteration: 197
+	Cost Value = 1.4844467541e-03		Relative Error = 6.8279523218e-06
+	Steplength = 6.4356337346e-01		Optimality Res = 1.1082992377e-04
+Iteration: 198
+	Cost Value = 1.4844352582e-03		Relative Error = 7.7442794482e-06
+	Steplength = 9.9256124410e-01		Optimality Res = 9.4877540775e-05
+Iteration: 199
+	Cost Value = 1.4843518811e-03		Relative Error = 5.6170727124e-05
+	Steplength = 9.8750166970e+00		Optimality Res = 8.9704366541e-05
+Iteration: 200
+	Cost Value = 1.4843198567e-03		Relative Error = 2.1575130763e-05
+	Steplength = 3.6363553225e+00		Optimality Res = 1.0354565186e-04
+Iteration: 201
+	Cost Value = 1.4843196605e-03		Relative Error = 1.3219722566e-07
+	Steplength = 4.2987085874e+00		Optimality Res = 1.1157005693e-04
+Optimal solution found.
+
+Elapsed time is 165.49899793 seconds.
+
+> File created: velocity.png
+
+> File created: result_hfem_ave.pdf
+
+> File created: pressure_control.png
+
+
+End of Run: 2021-03-31 19:27:42
+
+******************************************************************************************
+
+> 

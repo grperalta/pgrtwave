@@ -45,7 +45,7 @@ Directory of iteration histories.
 
 If you find these codes useful, you can cite the manuscript as:
 > G. Peralta and K. Kunisch, Mixed and hybrid Petrov-Galerkin finite element
-discretization for optimal control of the wave equation, [preprint](
+discretization for optimal control of the wave equation, to appear in Numerische Mathematik, [preprint](
 https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/kunisch_karl/Papers/wave.pdf).
 
 

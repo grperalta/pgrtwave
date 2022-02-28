@@ -44,9 +44,7 @@ Directory of npy files for the array of nodes and triangles. To be used in the s
 Directory of iteration histories.
 
 If you find these codes useful, you can cite the manuscript as:
-> G. Peralta and K. Kunisch, Mixed and hybrid Petrov-Galerkin finite element
-discretization for optimal control of the wave equation, to appear in Numerische Mathematik, [preprint](
-https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/kunisch_karl/Papers/wave.pdf).
+> G. Peralta and K. Kunisch, [Mixed and hybrid Petrov–Galerkin finite element discretization for optimal control of the wave equation](https://link.springer.com/article/10.1007/s00211-021-01258-9), Numerische Mathematik 150 (2), pp. 591-627, 2022. [preprint](https://static.uni-graz.at/fileadmin/_Persoenliche_Webseite/kunisch_karl/Papers/wave.pdf).
 
 
 Gilbert Peralta,
